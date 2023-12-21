@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.vectors_config import VectorsConfig
+from qdrant_openapi.models.vectors_config import VectorsConfig
 
 # TODO update the JSON string below
 json = "{}"

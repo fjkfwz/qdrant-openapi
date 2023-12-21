@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.nested_condition import NestedCondition
+from qdrant_openapi.models.nested_condition import NestedCondition
 
 # TODO update the JSON string below
 json = "{}"

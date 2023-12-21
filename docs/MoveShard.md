@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.move_shard import MoveShard
+from qdrant_openapi.models.move_shard import MoveShard
 
 # TODO update the JSON string below
 json = "{}"

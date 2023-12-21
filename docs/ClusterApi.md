@@ -1,4 +1,4 @@
-# openapi_client.ClusterApi
+# qdrant_openapi.ClusterApi
 
 All URIs are relative to *http://localhost:6333*
 
@@ -27,14 +27,14 @@ Get information about the current state and composition of the cluster
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.cluster_status200_response import ClusterStatus200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.cluster_status200_response import ClusterStatus200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -50,14 +50,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
 
     try:
         # Get cluster status info
@@ -109,14 +109,14 @@ Get cluster information for a collection
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.collection_cluster_info200_response import CollectionClusterInfo200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.collection_cluster_info200_response import CollectionClusterInfo200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -132,14 +132,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to retrieve the cluster info for
 
     try:
@@ -193,15 +193,15 @@ Create shard key
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_shard_key200_response import CreateShardKey200Response
-from openapi_client.models.create_sharding_key import CreateShardingKey
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_shard_key200_response import CreateShardKey200Response
+from qdrant_openapi.models.create_sharding_key import CreateShardingKey
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -217,17 +217,17 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to create shards for
     timeout = 56 # int | Wait for operation commit timeout in seconds.  If timeout is reached - request will return with service error.  (optional)
-    create_sharding_key = openapi_client.CreateShardingKey() # CreateShardingKey | Shard key configuration (optional)
+    create_sharding_key = qdrant_openapi.CreateShardingKey() # CreateShardingKey | Shard key configuration (optional)
 
     try:
         # Create shard key
@@ -282,15 +282,15 @@ Delete shard key
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_shard_key200_response import CreateShardKey200Response
-from openapi_client.models.drop_sharding_key import DropShardingKey
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_shard_key200_response import CreateShardKey200Response
+from qdrant_openapi.models.drop_sharding_key import DropShardingKey
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -306,17 +306,17 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to create shards for
     timeout = 56 # int | Wait for operation commit timeout in seconds.  If timeout is reached - request will return with service error.  (optional)
-    drop_sharding_key = openapi_client.DropShardingKey() # DropShardingKey | Select shard key to delete (optional)
+    drop_sharding_key = qdrant_openapi.DropShardingKey() # DropShardingKey | Select shard key to delete (optional)
 
     try:
         # Delete shard key
@@ -371,14 +371,14 @@ Tries to recover current peer Raft state.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_shard_key200_response import CreateShardKey200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_shard_key200_response import CreateShardKey200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -394,14 +394,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
 
     try:
         # Tries to recover current peer Raft state.
@@ -453,14 +453,14 @@ Tries to remove peer from the cluster. Will return an error if peer has shards o
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_shard_key200_response import CreateShardKey200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_shard_key200_response import CreateShardKey200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -476,14 +476,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
     peer_id = 56 # int | Id of the peer
     force = False # bool | If true - removes peer even if it has shards/replicas on it. (optional) (default to False)
 
@@ -539,15 +539,15 @@ Update collection cluster setup
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.cluster_operations import ClusterOperations
-from openapi_client.models.create_shard_key200_response import CreateShardKey200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.cluster_operations import ClusterOperations
+from qdrant_openapi.models.create_shard_key200_response import CreateShardKey200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -563,17 +563,17 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection on which to to apply the cluster update operation
     timeout = 56 # int | Wait for operation commit timeout in seconds.  If timeout is reached - request will return with service error.  (optional)
-    cluster_operations = openapi_client.ClusterOperations() # ClusterOperations | Collection cluster update operations (optional)
+    cluster_operations = qdrant_openapi.ClusterOperations() # ClusterOperations | Collection cluster update operations (optional)
 
     try:
         # Update collection cluster setup

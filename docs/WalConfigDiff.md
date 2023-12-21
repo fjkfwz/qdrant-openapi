@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.wal_config_diff import WalConfigDiff
+from qdrant_openapi.models.wal_config_diff import WalConfigDiff
 
 # TODO update the JSON string below
 json = "{}"

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.app_build_telemetry import AppBuildTelemetry
+from qdrant_openapi.models.app_build_telemetry import AppBuildTelemetry
 
 # TODO update the JSON string below
 json = "{}"

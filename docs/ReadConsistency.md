@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.read_consistency import ReadConsistency
+from qdrant_openapi.models.read_consistency import ReadConsistency
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scalar_quantization_config import ScalarQuantizationConfig
+from qdrant_openapi.models.scalar_quantization_config import ScalarQuantizationConfig
 
 # TODO update the JSON string below
 json = "{}"

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.batch_payloads_inner import BatchPayloadsInner
+from qdrant_openapi.models.batch_payloads_inner import BatchPayloadsInner
 
 # TODO update the JSON string below
 json = "{}"

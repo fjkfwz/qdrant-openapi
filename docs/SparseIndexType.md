@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.sparse_index_type import SparseIndexType
+from qdrant_openapi.models.sparse_index_type import SparseIndexType
 
 # TODO update the JSON string below
 json = "{}"

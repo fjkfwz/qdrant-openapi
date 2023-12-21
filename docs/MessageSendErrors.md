@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.message_send_errors import MessageSendErrors
+from qdrant_openapi.models.message_send_errors import MessageSendErrors
 
 # TODO update the JSON string below
 json = "{}"

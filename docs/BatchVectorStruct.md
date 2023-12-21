@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.batch_vector_struct import BatchVectorStruct
+from qdrant_openapi.models.batch_vector_struct import BatchVectorStruct
 
 # TODO update the JSON string below
 json = "{}"

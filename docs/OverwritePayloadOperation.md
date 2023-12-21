@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.overwrite_payload_operation import OverwritePayloadOperation
+from qdrant_openapi.models.overwrite_payload_operation import OverwritePayloadOperation
 
 # TODO update the JSON string below
 json = "{}"

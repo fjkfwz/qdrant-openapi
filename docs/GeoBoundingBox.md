@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.geo_bounding_box import GeoBoundingBox
+from qdrant_openapi.models.geo_bounding_box import GeoBoundingBox
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.with_payload_interface import WithPayloadInterface
+from qdrant_openapi.models.with_payload_interface import WithPayloadInterface
 
 # TODO update the JSON string below
 json = "{}"

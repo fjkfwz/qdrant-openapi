@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.recover_from_uploaded_snapshot202_response import RecoverFromUploadedSnapshot202Response
+from qdrant_openapi.models.recover_from_uploaded_snapshot202_response import RecoverFromUploadedSnapshot202Response
 
 # TODO update the JSON string below
 json = "{}"

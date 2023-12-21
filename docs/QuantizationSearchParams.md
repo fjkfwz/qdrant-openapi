@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.quantization_search_params import QuantizationSearchParams
+from qdrant_openapi.models.quantization_search_params import QuantizationSearchParams
 
 # TODO update the JSON string below
 json = "{}"

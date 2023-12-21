@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.running_environment_telemetry import RunningEnvironmentTelemetry
+from qdrant_openapi.models.running_environment_telemetry import RunningEnvironmentTelemetry
 
 # TODO update the JSON string below
 json = "{}"

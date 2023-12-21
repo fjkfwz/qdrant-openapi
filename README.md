@@ -1,4 +1,4 @@
-# openapi-client
+# qdrant_openapi
 API description for Qdrant vector search engine.
 
 This document describes CRUD and search operations on collections of points (vectors with payload).
@@ -168,7 +168,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openapi_client
+import qdrant_openapi
 ```
 
 ### Setuptools
@@ -182,7 +182,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import qdrant_openapi
 ```
 
 ### Tests
@@ -196,13 +196,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -218,15 +218,15 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClusterApi(api_client)
+    api_instance = qdrant_openapi.ClusterApi(api_client)
 
     try:
         # Get cluster status info

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.payload_selector_include import PayloadSelectorInclude
+from qdrant_openapi.models.payload_selector_include import PayloadSelectorInclude
 
 # TODO update the JSON string below
 json = "{}"

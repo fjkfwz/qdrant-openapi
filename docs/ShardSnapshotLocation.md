@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.shard_snapshot_location import ShardSnapshotLocation
+from qdrant_openapi.models.shard_snapshot_location import ShardSnapshotLocation
 
 # TODO update the JSON string below
 json = "{}"

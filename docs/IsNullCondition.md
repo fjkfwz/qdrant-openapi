@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.is_null_condition import IsNullCondition
+from qdrant_openapi.models.is_null_condition import IsNullCondition
 
 # TODO update the JSON string below
 json = "{}"

@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.vector_index_searches_telemetry import VectorIndexSearchesTelemetry
+from qdrant_openapi.models.vector_index_searches_telemetry import VectorIndexSearchesTelemetry
 
 # TODO update the JSON string below
 json = "{}"

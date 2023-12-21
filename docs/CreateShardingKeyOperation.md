@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.create_sharding_key_operation import CreateShardingKeyOperation
+from qdrant_openapi.models.create_sharding_key_operation import CreateShardingKeyOperation
 
 # TODO update the JSON string below
 json = "{}"

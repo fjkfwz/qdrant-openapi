@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.text_index_params import TextIndexParams
+from qdrant_openapi.models.text_index_params import TextIndexParams
 
 # TODO update the JSON string below
 json = "{}"

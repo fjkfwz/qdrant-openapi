@@ -1,4 +1,4 @@
-# openapi_client.PointsApi
+# qdrant_openapi.PointsApi
 
 All URIs are relative to *http://localhost:6333*
 
@@ -41,16 +41,16 @@ Apply a series of update operations for points, vectors and payloads
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.batch_update200_response import BatchUpdate200Response
-from openapi_client.models.update_operations import UpdateOperations
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.batch_update200_response import BatchUpdate200Response
+from qdrant_openapi.models.update_operations import UpdateOperations
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -66,18 +66,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to apply operations on
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    update_operations = openapi_client.UpdateOperations() # UpdateOperations | update operations (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    update_operations = qdrant_openapi.UpdateOperations() # UpdateOperations | update operations (optional)
 
     try:
         # Batch update points
@@ -135,16 +135,16 @@ Remove all payload for specified points
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.points_selector import PointsSelector
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.points_selector import PointsSelector
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -160,18 +160,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to clear payload from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    points_selector = openapi_client.PointsSelector() # PointsSelector | clear payload on points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    points_selector = qdrant_openapi.PointsSelector() # PointsSelector | clear payload on points (optional)
 
     try:
         # Clear payload
@@ -229,15 +229,15 @@ Count points which matches given filtering condition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.count_points200_response import CountPoints200Response
-from openapi_client.models.count_request import CountRequest
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.count_points200_response import CountPoints200Response
+from qdrant_openapi.models.count_request import CountRequest
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -253,16 +253,16 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to count in
-    count_request = openapi_client.CountRequest() # CountRequest | Request counts of points which matches given filtering condition (optional)
+    count_request = qdrant_openapi.CountRequest() # CountRequest | Request counts of points which matches given filtering condition (optional)
 
     try:
         # Count points
@@ -318,16 +318,16 @@ Delete specified key payload for points
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.delete_payload import DeletePayload
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.delete_payload import DeletePayload
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -343,18 +343,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to delete from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    delete_payload = openapi_client.DeletePayload() # DeletePayload | delete payload on points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    delete_payload = qdrant_openapi.DeletePayload() # DeletePayload | delete payload on points (optional)
 
     try:
         # Delete payload
@@ -412,16 +412,16 @@ Delete points
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.points_selector import PointsSelector
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.points_selector import PointsSelector
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -437,18 +437,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to delete from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    points_selector = openapi_client.PointsSelector() # PointsSelector | Operation to perform on points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    points_selector = qdrant_openapi.PointsSelector() # PointsSelector | Operation to perform on points (optional)
 
     try:
         # Delete points
@@ -506,16 +506,16 @@ Delete named vectors from the given points.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.delete_vectors import DeleteVectors
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.delete_vectors import DeleteVectors
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -531,18 +531,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to delete from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    delete_vectors = openapi_client.DeleteVectors() # DeleteVectors | Delete named vectors from points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    delete_vectors = qdrant_openapi.DeleteVectors() # DeleteVectors | Delete named vectors from points (optional)
 
     try:
         # Delete vectors
@@ -600,15 +600,15 @@ Look for points based on target and/or positive and negative example pairs, in b
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.discover_request_batch import DiscoverRequestBatch
-from openapi_client.models.search_batch_points200_response import SearchBatchPoints200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.discover_request_batch import DiscoverRequestBatch
+from qdrant_openapi.models.search_batch_points200_response import SearchBatchPoints200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -624,18 +624,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    discover_request_batch = openapi_client.DiscoverRequestBatch() # DiscoverRequestBatch | Batch request points based on { positive, negative } pairs of examples, and/or a target. (optional)
+    discover_request_batch = qdrant_openapi.DiscoverRequestBatch() # DiscoverRequestBatch | Batch request points based on { positive, negative } pairs of examples, and/or a target. (optional)
 
     try:
         # Discover batch points
@@ -693,15 +693,15 @@ Use context and a target to find the most similar points to the target, constrai
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.discover_request import DiscoverRequest
-from openapi_client.models.search_points200_response import SearchPoints200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.discover_request import DiscoverRequest
+from qdrant_openapi.models.search_points200_response import SearchPoints200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -717,18 +717,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    discover_request = openapi_client.DiscoverRequest() # DiscoverRequest | Request points based on {positive, negative} pairs of examples, and/or a target (optional)
+    discover_request = qdrant_openapi.DiscoverRequest() # DiscoverRequest | Request points based on {positive, negative} pairs of examples, and/or a target (optional)
 
     try:
         # Discover points
@@ -786,14 +786,14 @@ Retrieve full information of single point by id
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_point200_response import GetPoint200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.get_point200_response import GetPoint200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -809,17 +809,17 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to retrieve from
-    id = openapi_client.ExtendedPointId() # ExtendedPointId | Id of the point
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    id = qdrant_openapi.ExtendedPointId() # ExtendedPointId | Id of the point
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
 
     try:
         # Get point
@@ -876,15 +876,15 @@ Retrieve multiple points by specified IDs
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_points200_response import GetPoints200Response
-from openapi_client.models.point_request import PointRequest
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.get_points200_response import GetPoints200Response
+from qdrant_openapi.models.point_request import PointRequest
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -900,17 +900,17 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to retrieve from
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
-    point_request = openapi_client.PointRequest() # PointRequest | List of points to retrieve (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    point_request = qdrant_openapi.PointRequest() # PointRequest | List of points to retrieve (optional)
 
     try:
         # Get points
@@ -967,16 +967,16 @@ Replace full payload of points with new one
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.set_payload import SetPayload
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.set_payload import SetPayload
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -992,18 +992,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to set from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    set_payload = openapi_client.SetPayload() # SetPayload | Payload and points selector (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    set_payload = qdrant_openapi.SetPayload() # SetPayload | Payload and points selector (optional)
 
     try:
         # Overwrite payload
@@ -1061,15 +1061,15 @@ Look for the points which are closer to stored positive examples and at the same
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.recommend_request_batch import RecommendRequestBatch
-from openapi_client.models.search_batch_points200_response import SearchBatchPoints200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.recommend_request_batch import RecommendRequestBatch
+from qdrant_openapi.models.search_batch_points200_response import SearchBatchPoints200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1085,18 +1085,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    recommend_request_batch = openapi_client.RecommendRequestBatch() # RecommendRequestBatch | Request points based on positive and negative examples. (optional)
+    recommend_request_batch = qdrant_openapi.RecommendRequestBatch() # RecommendRequestBatch | Request points based on positive and negative examples. (optional)
 
     try:
         # Recommend batch points
@@ -1154,15 +1154,15 @@ Look for the points which are closer to stored positive examples and at the same
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.recommend_groups_request import RecommendGroupsRequest
-from openapi_client.models.search_point_groups200_response import SearchPointGroups200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.recommend_groups_request import RecommendGroupsRequest
+from qdrant_openapi.models.search_point_groups200_response import SearchPointGroups200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1178,18 +1178,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    recommend_groups_request = openapi_client.RecommendGroupsRequest() # RecommendGroupsRequest | Request points based on positive and negative examples, grouped by a payload field. (optional)
+    recommend_groups_request = qdrant_openapi.RecommendGroupsRequest() # RecommendGroupsRequest | Request points based on positive and negative examples, grouped by a payload field. (optional)
 
     try:
         # Recommend point groups
@@ -1247,15 +1247,15 @@ Look for the points which are closer to stored positive examples and at the same
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.recommend_request import RecommendRequest
-from openapi_client.models.search_points200_response import SearchPoints200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.recommend_request import RecommendRequest
+from qdrant_openapi.models.search_points200_response import SearchPoints200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1271,18 +1271,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    recommend_request = openapi_client.RecommendRequest() # RecommendRequest | Request points based on positive and negative examples. (optional)
+    recommend_request = qdrant_openapi.RecommendRequest() # RecommendRequest | Request points based on positive and negative examples. (optional)
 
     try:
         # Recommend points
@@ -1340,15 +1340,15 @@ Scroll request - paginate over all points which matches given filtering conditio
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.scroll_points200_response import ScrollPoints200Response
-from openapi_client.models.scroll_request import ScrollRequest
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.scroll_points200_response import ScrollPoints200Response
+from qdrant_openapi.models.scroll_request import ScrollRequest
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1364,17 +1364,17 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to retrieve from
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
-    scroll_request = openapi_client.ScrollRequest() # ScrollRequest | Pagination and filter parameters (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    scroll_request = qdrant_openapi.ScrollRequest() # ScrollRequest | Pagination and filter parameters (optional)
 
     try:
         # Scroll points
@@ -1431,15 +1431,15 @@ Retrieve by batch the closest points based on vector similarity and given filter
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.search_batch_points200_response import SearchBatchPoints200Response
-from openapi_client.models.search_request_batch import SearchRequestBatch
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.search_batch_points200_response import SearchBatchPoints200Response
+from qdrant_openapi.models.search_request_batch import SearchRequestBatch
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1455,18 +1455,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    search_request_batch = openapi_client.SearchRequestBatch() # SearchRequestBatch | Search batch request (optional)
+    search_request_batch = qdrant_openapi.SearchRequestBatch() # SearchRequestBatch | Search batch request (optional)
 
     try:
         # Search batch points
@@ -1524,15 +1524,15 @@ Retrieve closest points based on vector similarity and given filtering condition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.search_groups_request import SearchGroupsRequest
-from openapi_client.models.search_point_groups200_response import SearchPointGroups200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.search_groups_request import SearchGroupsRequest
+from qdrant_openapi.models.search_point_groups200_response import SearchPointGroups200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1548,18 +1548,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    search_groups_request = openapi_client.SearchGroupsRequest() # SearchGroupsRequest | Search request with optional filtering, grouped by a given payload field (optional)
+    search_groups_request = qdrant_openapi.SearchGroupsRequest() # SearchGroupsRequest | Search request with optional filtering, grouped by a given payload field (optional)
 
     try:
         # Search point groups
@@ -1617,15 +1617,15 @@ Retrieve closest points based on vector similarity and given filtering condition
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.search_points200_response import SearchPoints200Response
-from openapi_client.models.search_request import SearchRequest
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.search_points200_response import SearchPoints200Response
+from qdrant_openapi.models.search_request import SearchRequest
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1641,18 +1641,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to search in
-    consistency = openapi_client.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
+    consistency = qdrant_openapi.ReadConsistency() # ReadConsistency | Define read consistency guarantees for the operation (optional)
     timeout = 56 # int | If set, overrides global timeout for this request. Unit is seconds. (optional)
-    search_request = openapi_client.SearchRequest() # SearchRequest | Search request with optional filtering (optional)
+    search_request = qdrant_openapi.SearchRequest() # SearchRequest | Search request with optional filtering (optional)
 
     try:
         # Search points
@@ -1710,16 +1710,16 @@ Set payload values for points
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.set_payload import SetPayload
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.set_payload import SetPayload
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1735,18 +1735,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to set from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    set_payload = openapi_client.SetPayload() # SetPayload | Set payload on points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    set_payload = qdrant_openapi.SetPayload() # SetPayload | Set payload on points (optional)
 
     try:
         # Set payload
@@ -1804,16 +1804,16 @@ Update specified named vectors on points, keep unspecified vectors intact.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.update_vectors import UpdateVectors
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.update_vectors import UpdateVectors
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1829,18 +1829,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to update from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    update_vectors = openapi_client.UpdateVectors() # UpdateVectors | Update named vectors on points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    update_vectors = qdrant_openapi.UpdateVectors() # UpdateVectors | Update named vectors on points (optional)
 
     try:
         # Update vectors
@@ -1898,16 +1898,16 @@ Perform insert + updates on points. If point with given ID already exists - it w
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response
-from openapi_client.models.point_insert_operations import PointInsertOperations
-from openapi_client.models.write_ordering import WriteOrdering
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response
+from qdrant_openapi.models.point_insert_operations import PointInsertOperations
+from qdrant_openapi.models.write_ordering import WriteOrdering
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -1923,18 +1923,18 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PointsApi(api_client)
+    api_instance = qdrant_openapi.PointsApi(api_client)
     collection_name = 'collection_name_example' # str | Name of the collection to update from
     wait = True # bool | If true, wait for changes to actually happen (optional)
-    ordering = openapi_client.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
-    point_insert_operations = openapi_client.PointInsertOperations() # PointInsertOperations | Operation to perform on points (optional)
+    ordering = qdrant_openapi.WriteOrdering() # WriteOrdering | define ordering guarantees for the operation (optional)
+    point_insert_operations = qdrant_openapi.PointInsertOperations() # PointInsertOperations | Operation to perform on points (optional)
 
     try:
         # Upsert points

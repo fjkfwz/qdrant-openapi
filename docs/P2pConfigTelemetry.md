@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.p2p_config_telemetry import P2pConfigTelemetry
+from qdrant_openapi.models.p2p_config_telemetry import P2pConfigTelemetry
 
 # TODO update the JSON string below
 json = "{}"

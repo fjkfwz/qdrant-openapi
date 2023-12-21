@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.point_ids_list import PointIdsList
+from qdrant_openapi.models.point_ids_list import PointIdsList
 
 # TODO update the JSON string below
 json = "{}"

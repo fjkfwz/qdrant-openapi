@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.discover_request import DiscoverRequest
+from qdrant_openapi.models.discover_request import DiscoverRequest
 
 # TODO update the JSON string below
 json = "{}"

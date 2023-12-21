@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.context_example_pair import ContextExamplePair
+from qdrant_openapi.models.context_example_pair import ContextExamplePair
 
 # TODO update the JSON string below
 json = "{}"

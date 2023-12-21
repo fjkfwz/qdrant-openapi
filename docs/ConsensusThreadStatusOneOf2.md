@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.consensus_thread_status_one_of2 import ConsensusThreadStatusOneOf2
+from qdrant_openapi.models.consensus_thread_status_one_of2 import ConsensusThreadStatusOneOf2
 
 # TODO update the JSON string below
 json = "{}"

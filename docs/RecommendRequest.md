@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.recommend_request import RecommendRequest
+from qdrant_openapi.models.recommend_request import RecommendRequest
 
 # TODO update the JSON string below
 json = "{}"

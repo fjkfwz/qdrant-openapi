@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.collections_telemetry import CollectionsTelemetry
+from qdrant_openapi.models.collections_telemetry import CollectionsTelemetry
 
 # TODO update the JSON string below
 json = "{}"

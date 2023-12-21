@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.shard_snapshot_recover import ShardSnapshotRecover
+from qdrant_openapi.models.shard_snapshot_recover import ShardSnapshotRecover
 
 # TODO update the JSON string below
 json = "{}"

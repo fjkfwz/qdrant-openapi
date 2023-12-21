@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.vector_params_diff import VectorParamsDiff
+from qdrant_openapi.models.vector_params_diff import VectorParamsDiff
 
 # TODO update the JSON string below
 json = "{}"

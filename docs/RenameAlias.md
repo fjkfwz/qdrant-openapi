@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.rename_alias import RenameAlias
+from qdrant_openapi.models.rename_alias import RenameAlias
 
 # TODO update the JSON string below
 json = "{}"

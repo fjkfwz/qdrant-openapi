@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.segment_config import SegmentConfig
+from qdrant_openapi.models.segment_config import SegmentConfig
 
 # TODO update the JSON string below
 json = "{}"

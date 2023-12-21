@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.nested import Nested
+from qdrant_openapi.models.nested import Nested
 
 # TODO update the JSON string below
 json = "{}"

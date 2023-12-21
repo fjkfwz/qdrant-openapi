@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.collection_params_diff import CollectionParamsDiff
+from qdrant_openapi.models.collection_params_diff import CollectionParamsDiff
 
 # TODO update the JSON string below
 json = "{}"

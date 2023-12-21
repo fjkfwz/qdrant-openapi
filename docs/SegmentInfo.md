@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.segment_info import SegmentInfo
+from qdrant_openapi.models.segment_info import SegmentInfo
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.cluster_operations import ClusterOperations
+from qdrant_openapi.models.cluster_operations import ClusterOperations
 
 # TODO update the JSON string below
 json = "{}"

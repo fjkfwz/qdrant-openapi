@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.rename_alias_operation import RenameAliasOperation
+from qdrant_openapi.models.rename_alias_operation import RenameAliasOperation
 
 # TODO update the JSON string below
 json = "{}"

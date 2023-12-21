@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.cluster_config_telemetry import ClusterConfigTelemetry
+from qdrant_openapi.models.cluster_config_telemetry import ClusterConfigTelemetry
 
 # TODO update the JSON string below
 json = "{}"

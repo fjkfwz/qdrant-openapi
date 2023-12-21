@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.locks_option import LocksOption
+from qdrant_openapi.models.locks_option import LocksOption
 
 # TODO update the JSON string below
 json = "{}"

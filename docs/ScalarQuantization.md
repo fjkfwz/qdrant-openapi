@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scalar_quantization import ScalarQuantization
+from qdrant_openapi.models.scalar_quantization import ScalarQuantization
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.delete_vectors import DeleteVectors
+from qdrant_openapi.models.delete_vectors import DeleteVectors
 
 # TODO update the JSON string below
 json = "{}"

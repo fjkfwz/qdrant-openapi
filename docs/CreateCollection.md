@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.create_collection import CreateCollection
+from qdrant_openapi.models.create_collection import CreateCollection
 
 # TODO update the JSON string below
 json = "{}"

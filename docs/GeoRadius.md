@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.geo_radius import GeoRadius
+from qdrant_openapi.models.geo_radius import GeoRadius
 
 # TODO update the JSON string below
 json = "{}"

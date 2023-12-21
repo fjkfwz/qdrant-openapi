@@ -1,4 +1,4 @@
-# openapi_client.ServiceApi
+# qdrant_openapi.ServiceApi
 
 All URIs are relative to *http://localhost:6333*
 
@@ -27,14 +27,14 @@ Get lock options. If write is locked, all write operations and collection creati
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_locks200_response import GetLocks200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.get_locks200_response import GetLocks200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -50,14 +50,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
 
     try:
         # Get lock options
@@ -109,13 +109,13 @@ An endpoint for health checking used in Kubernetes.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -131,14 +131,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
 
     try:
         # Kubernetes healthz endpoint
@@ -189,13 +189,13 @@ An endpoint for health checking used in Kubernetes.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -211,14 +211,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
 
     try:
         # Kubernetes livez endpoint
@@ -269,13 +269,13 @@ Collect metrics data including app info, collections info, cluster info and stat
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -291,14 +291,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
     anonymize = True # bool | If true, anonymize result (optional)
 
     try:
@@ -353,15 +353,15 @@ Set lock options. If write is locked, all write operations and collection creati
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_locks200_response import GetLocks200Response
-from openapi_client.models.locks_option import LocksOption
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.get_locks200_response import GetLocks200Response
+from qdrant_openapi.models.locks_option import LocksOption
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -377,15 +377,15 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
-    locks_option = openapi_client.LocksOption() # LocksOption | Lock options and optional error message (optional)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
+    locks_option = qdrant_openapi.LocksOption() # LocksOption | Lock options and optional error message (optional)
 
     try:
         # Set lock options
@@ -440,13 +440,13 @@ An endpoint for health checking used in Kubernetes.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -462,14 +462,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
 
     try:
         # Kubernetes readyz endpoint
@@ -520,14 +520,14 @@ Collect telemetry data including app info, system info, collections info, cluste
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.telemetry200_response import Telemetry200Response
-from openapi_client.rest import ApiException
+import qdrant_openapi
+from qdrant_openapi.models.telemetry200_response import Telemetry200Response
+from qdrant_openapi.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:6333
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     host = "http://localhost:6333"
 )
 
@@ -543,14 +543,14 @@ configuration.api_key['api-key'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['api-key'] = 'Bearer'
 
 # Configure Bearer authorization: bearerAuth
-configuration = openapi_client.Configuration(
+configuration = qdrant_openapi.Configuration(
     access_token = os.environ["BEARER_TOKEN"]
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with qdrant_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ServiceApi(api_client)
+    api_instance = qdrant_openapi.ServiceApi(api_client)
     anonymize = True # bool | If true, anonymize result (optional)
 
     try:

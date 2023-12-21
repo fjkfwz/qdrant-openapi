@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.shard_key_selector import ShardKeySelector
+from qdrant_openapi.models.shard_key_selector import ShardKeySelector
 
 # TODO update the JSON string below
 json = "{}"

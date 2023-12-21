@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.payload_storage_type import PayloadStorageType
+from qdrant_openapi.models.payload_storage_type import PayloadStorageType
 
 # TODO update the JSON string below
 json = "{}"

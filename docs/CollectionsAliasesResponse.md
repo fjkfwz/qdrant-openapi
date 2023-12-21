@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.collections_aliases_response import CollectionsAliasesResponse
+from qdrant_openapi.models.collections_aliases_response import CollectionsAliasesResponse
 
 # TODO update the JSON string below
 json = "{}"

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.optimizers_config_diff import OptimizersConfigDiff
+from qdrant_openapi.models.optimizers_config_diff import OptimizersConfigDiff
 
 # TODO update the JSON string below
 json = "{}"

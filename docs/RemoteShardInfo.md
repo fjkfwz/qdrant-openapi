@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.remote_shard_info import RemoteShardInfo
+from qdrant_openapi.models.remote_shard_info import RemoteShardInfo
 
 # TODO update the JSON string below
 json = "{}"

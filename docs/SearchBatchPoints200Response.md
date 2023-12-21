@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.search_batch_points200_response import SearchBatchPoints200Response
+from qdrant_openapi.models.search_batch_points200_response import SearchBatchPoints200Response
 
 # TODO update the JSON string below
 json = "{}"

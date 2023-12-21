@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.raft_info import RaftInfo
+from qdrant_openapi.models.raft_info import RaftInfo
 
 # TODO update the JSON string below
 json = "{}"

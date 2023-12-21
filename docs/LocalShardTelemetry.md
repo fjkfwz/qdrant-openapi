@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.local_shard_telemetry import LocalShardTelemetry
+from qdrant_openapi.models.local_shard_telemetry import LocalShardTelemetry
 
 # TODO update the JSON string below
 json = "{}"

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.any_variants import AnyVariants
+from qdrant_openapi.models.any_variants import AnyVariants
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scroll_result import ScrollResult
+from qdrant_openapi.models.scroll_result import ScrollResult
 
 # TODO update the JSON string below
 json = "{}"

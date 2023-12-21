@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hnsw_config_diff import HnswConfigDiff
+from qdrant_openapi.models.hnsw_config_diff import HnswConfigDiff
 
 # TODO update the JSON string below
 json = "{}"

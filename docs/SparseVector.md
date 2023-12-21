@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.sparse_vector import SparseVector
+from qdrant_openapi.models.sparse_vector import SparseVector
 
 # TODO update the JSON string below
 json = "{}"

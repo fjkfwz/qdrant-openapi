@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.geo_line_string import GeoLineString
+from qdrant_openapi.models.geo_line_string import GeoLineString
 
 # TODO update the JSON string below
 json = "{}"

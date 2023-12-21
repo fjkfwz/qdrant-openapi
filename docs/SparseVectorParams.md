@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.sparse_vector_params import SparseVectorParams
+from qdrant_openapi.models.sparse_vector_params import SparseVectorParams
 
 # TODO update the JSON string below
 json = "{}"

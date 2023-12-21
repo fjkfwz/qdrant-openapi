@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.point_struct import PointStruct
+from qdrant_openapi.models.point_struct import PointStruct
 
 # TODO update the JSON string below
 json = "{}"

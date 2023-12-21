@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.sparse_index_config import SparseIndexConfig
+from qdrant_openapi.models.sparse_index_config import SparseIndexConfig
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.count_request import CountRequest
+from qdrant_openapi.models.count_request import CountRequest
 
 # TODO update the JSON string below
 json = "{}"

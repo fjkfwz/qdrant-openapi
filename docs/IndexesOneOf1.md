@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.indexes_one_of1 import IndexesOneOf1
+from qdrant_openapi.models.indexes_one_of1 import IndexesOneOf1
 
 # TODO update the JSON string below
 json = "{}"

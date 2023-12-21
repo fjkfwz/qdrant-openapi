@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.field_condition import FieldCondition
+from qdrant_openapi.models.field_condition import FieldCondition
 
 # TODO update the JSON string below
 json = "{}"

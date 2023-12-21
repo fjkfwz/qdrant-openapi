@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.match_except import MatchExcept
+from qdrant_openapi.models.match_except import MatchExcept
 
 # TODO update the JSON string below
 json = "{}"

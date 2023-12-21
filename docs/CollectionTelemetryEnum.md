@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.collection_telemetry_enum import CollectionTelemetryEnum
+from qdrant_openapi.models.collection_telemetry_enum import CollectionTelemetryEnum
 
 # TODO update the JSON string below
 json = "{}"

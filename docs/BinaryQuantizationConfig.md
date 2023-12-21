@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.binary_quantization_config import BinaryQuantizationConfig
+from qdrant_openapi.models.binary_quantization_config import BinaryQuantizationConfig
 
 # TODO update the JSON string below
 json = "{}"

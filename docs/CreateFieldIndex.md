@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.create_field_index import CreateFieldIndex
+from qdrant_openapi.models.create_field_index import CreateFieldIndex
 
 # TODO update the JSON string below
 json = "{}"

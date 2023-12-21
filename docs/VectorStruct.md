@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.vector_struct import VectorStruct
+from qdrant_openapi.models.vector_struct import VectorStruct
 
 # TODO update the JSON string below
 json = "{}"

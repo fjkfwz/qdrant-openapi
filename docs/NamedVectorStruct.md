@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.named_vector_struct import NamedVectorStruct
+from qdrant_openapi.models.named_vector_struct import NamedVectorStruct
 
 # TODO update the JSON string below
 json = "{}"

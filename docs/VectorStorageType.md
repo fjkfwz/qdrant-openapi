@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.vector_storage_type import VectorStorageType
+from qdrant_openapi.models.vector_storage_type import VectorStorageType
 
 # TODO update the JSON string below
 json = "{}"

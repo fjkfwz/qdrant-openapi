@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.filter_selector import FilterSelector
+from qdrant_openapi.models.filter_selector import FilterSelector
 
 # TODO update the JSON string below
 json = "{}"

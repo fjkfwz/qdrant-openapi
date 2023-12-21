@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.payload_field_schema import PayloadFieldSchema
+from qdrant_openapi.models.payload_field_schema import PayloadFieldSchema
 
 # TODO update the JSON string below
 json = "{}"

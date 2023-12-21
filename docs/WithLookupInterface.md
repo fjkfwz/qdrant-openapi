@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.with_lookup_interface import WithLookupInterface
+from qdrant_openapi.models.with_lookup_interface import WithLookupInterface
 
 # TODO update the JSON string below
 json = "{}"

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.drop_replica_operation import DropReplicaOperation
+from qdrant_openapi.models.drop_replica_operation import DropReplicaOperation
 
 # TODO update the JSON string below
 json = "{}"

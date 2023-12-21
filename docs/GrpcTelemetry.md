@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.grpc_telemetry import GrpcTelemetry
+from qdrant_openapi.models.grpc_telemetry import GrpcTelemetry
 
 # TODO update the JSON string below
 json = "{}"

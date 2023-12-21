@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.payload_selector import PayloadSelector
+from qdrant_openapi.models.payload_selector import PayloadSelector
 
 # TODO update the JSON string below
 json = "{}"
