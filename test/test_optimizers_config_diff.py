@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.optimizers_config_diff import OptimizersConfigDiff  # noqa: E501
+from qdrant_openapi.models.optimizers_config_diff import OptimizersConfigDiff  # noqa: E501
 
 class TestOptimizersConfigDiff(unittest.TestCase):
     """OptimizersConfigDiff unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.geo_point import GeoPoint  # noqa: E501
+from qdrant_openapi.models.geo_point import GeoPoint  # noqa: E501
 
 class TestGeoPoint(unittest.TestCase):
     """GeoPoint unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.sparse_index_type import SparseIndexType  # noqa: E501
+from qdrant_openapi.models.sparse_index_type import SparseIndexType  # noqa: E501
 
 class TestSparseIndexType(unittest.TestCase):
     """SparseIndexType unit test stubs"""

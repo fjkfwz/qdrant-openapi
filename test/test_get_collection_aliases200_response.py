@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_collection_aliases200_response import GetCollectionAliases200Response  # noqa: E501
+from qdrant_openapi.models.get_collection_aliases200_response import GetCollectionAliases200Response  # noqa: E501
 
 class TestGetCollectionAliases200Response(unittest.TestCase):
     """GetCollectionAliases200Response unit test stubs"""
@@ -39,9 +39,9 @@ class TestGetCollectionAliases200Response(unittest.TestCase):
             return GetCollectionAliases200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.collections_aliases_response.CollectionsAliasesResponse(
+                result = qdrant_openapi.models.collections_aliases_response.CollectionsAliasesResponse(
                     aliases = [
-                        openapi_client.models.alias_description.AliasDescription(
+                        qdrant_openapi.models.alias_description.AliasDescription(
                             alias_name = '', 
                             collection_name = '', )
                         ], )

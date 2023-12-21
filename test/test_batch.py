@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.batch import Batch  # noqa: E501
+from qdrant_openapi.models.batch import Batch  # noqa: E501
 
 class TestBatch(unittest.TestCase):
     """Batch unit test stubs"""

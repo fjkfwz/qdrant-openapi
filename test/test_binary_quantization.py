@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.binary_quantization import BinaryQuantization  # noqa: E501
+from qdrant_openapi.models.binary_quantization import BinaryQuantization  # noqa: E501
 
 class TestBinaryQuantization(unittest.TestCase):
     """BinaryQuantization unit test stubs"""
@@ -37,12 +37,12 @@ class TestBinaryQuantization(unittest.TestCase):
         model = BinaryQuantization()  # noqa: E501
         if include_optional:
             return BinaryQuantization(
-                binary = openapi_client.models.binary_quantization_config.BinaryQuantizationConfig(
+                binary = qdrant_openapi.models.binary_quantization_config.BinaryQuantizationConfig(
                     always_ram = True, )
             )
         else:
             return BinaryQuantization(
-                binary = openapi_client.models.binary_quantization_config.BinaryQuantizationConfig(
+                binary = qdrant_openapi.models.binary_quantization_config.BinaryQuantizationConfig(
                     always_ram = True, ),
         )
         """

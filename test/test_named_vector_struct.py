@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.named_vector_struct import NamedVectorStruct  # noqa: E501
+from qdrant_openapi.models.named_vector_struct import NamedVectorStruct  # noqa: E501
 
 class TestNamedVectorStruct(unittest.TestCase):
     """NamedVectorStruct unit test stubs"""
@@ -38,7 +38,7 @@ class TestNamedVectorStruct(unittest.TestCase):
         if include_optional:
             return NamedVectorStruct(
                 name = '',
-                vector = openapi_client.models.sparse_vector.SparseVector(
+                vector = qdrant_openapi.models.sparse_vector.SparseVector(
                     indices = [
                         0
                         ], 
@@ -49,7 +49,7 @@ class TestNamedVectorStruct(unittest.TestCase):
         else:
             return NamedVectorStruct(
                 name = '',
-                vector = openapi_client.models.sparse_vector.SparseVector(
+                vector = qdrant_openapi.models.sparse_vector.SparseVector(
                     indices = [
                         0
                         ], 

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.recommend_request_batch import RecommendRequestBatch  # noqa: E501
+from qdrant_openapi.models.recommend_request_batch import RecommendRequestBatch  # noqa: E501
 
 class TestRecommendRequestBatch(unittest.TestCase):
     """RecommendRequestBatch unit test stubs"""
@@ -38,7 +38,7 @@ class TestRecommendRequestBatch(unittest.TestCase):
         if include_optional:
             return RecommendRequestBatch(
                 searches = [
-                    openapi_client.models.recommend_request.RecommendRequest(
+                    qdrant_openapi.models.recommend_request.RecommendRequest(
                         shard_key = null, 
                         positive = [
                             null
@@ -47,7 +47,7 @@ class TestRecommendRequestBatch(unittest.TestCase):
                             null
                             ], 
                         strategy = 'average_vector', 
-                        filter = openapi_client.models.filter.Filter(
+                        filter = qdrant_openapi.models.filter.Filter(
                             should = [
                                 null
                                 ], 
@@ -57,10 +57,10 @@ class TestRecommendRequestBatch(unittest.TestCase):
                             must_not = [
                                 null
                                 ], ), 
-                        params = openapi_client.models.search_params.SearchParams(
+                        params = qdrant_openapi.models.search_params.SearchParams(
                             hnsw_ef = 0, 
                             exact = True, 
-                            quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                            quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                                 ignore = True, 
                                 rescore = True, 
                                 oversampling = 1, ), 
@@ -71,7 +71,7 @@ class TestRecommendRequestBatch(unittest.TestCase):
                         with_vector = null, 
                         score_threshold = 1.337, 
                         using = '', 
-                        lookup_from = openapi_client.models.lookup_location.LookupLocation(
+                        lookup_from = qdrant_openapi.models.lookup_location.LookupLocation(
                             collection = '', 
                             vector = '', ), )
                     ]
@@ -79,7 +79,7 @@ class TestRecommendRequestBatch(unittest.TestCase):
         else:
             return RecommendRequestBatch(
                 searches = [
-                    openapi_client.models.recommend_request.RecommendRequest(
+                    qdrant_openapi.models.recommend_request.RecommendRequest(
                         shard_key = null, 
                         positive = [
                             null
@@ -88,7 +88,7 @@ class TestRecommendRequestBatch(unittest.TestCase):
                             null
                             ], 
                         strategy = 'average_vector', 
-                        filter = openapi_client.models.filter.Filter(
+                        filter = qdrant_openapi.models.filter.Filter(
                             should = [
                                 null
                                 ], 
@@ -98,10 +98,10 @@ class TestRecommendRequestBatch(unittest.TestCase):
                             must_not = [
                                 null
                                 ], ), 
-                        params = openapi_client.models.search_params.SearchParams(
+                        params = qdrant_openapi.models.search_params.SearchParams(
                             hnsw_ef = 0, 
                             exact = True, 
-                            quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                            quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                                 ignore = True, 
                                 rescore = True, 
                                 oversampling = 1, ), 
@@ -112,7 +112,7 @@ class TestRecommendRequestBatch(unittest.TestCase):
                         with_vector = null, 
                         score_threshold = 1.337, 
                         using = '', 
-                        lookup_from = openapi_client.models.lookup_location.LookupLocation(
+                        lookup_from = qdrant_openapi.models.lookup_location.LookupLocation(
                             collection = '', 
                             vector = '', ), )
                     ],

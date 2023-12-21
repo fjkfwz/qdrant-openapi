@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collection_cluster_info200_response import CollectionClusterInfo200Response  # noqa: E501
+from qdrant_openapi.models.collection_cluster_info200_response import CollectionClusterInfo200Response  # noqa: E501
 
 class TestCollectionClusterInfo200Response(unittest.TestCase):
     """CollectionClusterInfo200Response unit test stubs"""
@@ -39,24 +39,24 @@ class TestCollectionClusterInfo200Response(unittest.TestCase):
             return CollectionClusterInfo200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.collection_cluster_info.CollectionClusterInfo(
+                result = qdrant_openapi.models.collection_cluster_info.CollectionClusterInfo(
                     peer_id = 0, 
                     shard_count = 0, 
                     local_shards = [
-                        openapi_client.models.local_shard_info.LocalShardInfo(
+                        qdrant_openapi.models.local_shard_info.LocalShardInfo(
                             shard_id = 0, 
                             shard_key = null, 
                             points_count = 0, 
                             state = 'Active', )
                         ], 
                     remote_shards = [
-                        openapi_client.models.remote_shard_info.RemoteShardInfo(
+                        qdrant_openapi.models.remote_shard_info.RemoteShardInfo(
                             shard_id = 0, 
                             peer_id = 0, 
                             state = 'Active', )
                         ], 
                     shard_transfers = [
-                        openapi_client.models.shard_transfer_info.ShardTransferInfo(
+                        qdrant_openapi.models.shard_transfer_info.ShardTransferInfo(
                             shard_id = 0, 
                             from = 0, 
                             to = 0, 

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.local_shard_info import LocalShardInfo  # noqa: E501
+from qdrant_openapi.models.local_shard_info import LocalShardInfo  # noqa: E501
 
 class TestLocalShardInfo(unittest.TestCase):
     """LocalShardInfo unit test stubs"""

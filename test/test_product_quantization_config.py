@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.product_quantization_config import ProductQuantizationConfig  # noqa: E501
+from qdrant_openapi.models.product_quantization_config import ProductQuantizationConfig  # noqa: E501
 
 class TestProductQuantizationConfig(unittest.TestCase):
     """ProductQuantizationConfig unit test stubs"""

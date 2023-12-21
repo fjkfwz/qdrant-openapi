@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.update_operation import UpdateOperation  # noqa: E501
+from qdrant_openapi.models.update_operation import UpdateOperation  # noqa: E501
 
 class TestUpdateOperation(unittest.TestCase):
     """UpdateOperation unit test stubs"""
@@ -39,12 +39,12 @@ class TestUpdateOperation(unittest.TestCase):
             return UpdateOperation(
                 upsert = None,
                 delete = None,
-                set_payload = openapi_client.models.set_payload.SetPayload(
+                set_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -55,12 +55,12 @@ class TestUpdateOperation(unittest.TestCase):
                             null
                             ], ), 
                     shard_key = null, ),
-                overwrite_payload = openapi_client.models.set_payload.SetPayload(
+                overwrite_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -71,14 +71,14 @@ class TestUpdateOperation(unittest.TestCase):
                             null
                             ], ), 
                     shard_key = null, ),
-                delete_payload = openapi_client.models.delete_payload.DeletePayload(
+                delete_payload = qdrant_openapi.models.delete_payload.DeletePayload(
                     keys = [
                         ''
                         ], 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -90,18 +90,18 @@ class TestUpdateOperation(unittest.TestCase):
                             ], ), 
                     shard_key = null, ),
                 clear_payload = None,
-                update_vectors = openapi_client.models.update_vectors.UpdateVectors(
+                update_vectors = qdrant_openapi.models.update_vectors.UpdateVectors(
                     points = [
-                        openapi_client.models.point_vectors.PointVectors(
+                        qdrant_openapi.models.point_vectors.PointVectors(
                             id = null, 
                             vector = null, )
                         ], 
                     shard_key = null, ),
-                delete_vectors = openapi_client.models.delete_vectors.DeleteVectors(
+                delete_vectors = qdrant_openapi.models.delete_vectors.DeleteVectors(
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -120,12 +120,12 @@ class TestUpdateOperation(unittest.TestCase):
             return UpdateOperation(
                 upsert = None,
                 delete = None,
-                set_payload = openapi_client.models.set_payload.SetPayload(
+                set_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -136,12 +136,12 @@ class TestUpdateOperation(unittest.TestCase):
                             null
                             ], ), 
                     shard_key = null, ),
-                overwrite_payload = openapi_client.models.set_payload.SetPayload(
+                overwrite_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -152,14 +152,14 @@ class TestUpdateOperation(unittest.TestCase):
                             null
                             ], ), 
                     shard_key = null, ),
-                delete_payload = openapi_client.models.delete_payload.DeletePayload(
+                delete_payload = qdrant_openapi.models.delete_payload.DeletePayload(
                     keys = [
                         ''
                         ], 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -171,18 +171,18 @@ class TestUpdateOperation(unittest.TestCase):
                             ], ), 
                     shard_key = null, ),
                 clear_payload = None,
-                update_vectors = openapi_client.models.update_vectors.UpdateVectors(
+                update_vectors = qdrant_openapi.models.update_vectors.UpdateVectors(
                     points = [
-                        openapi_client.models.point_vectors.PointVectors(
+                        qdrant_openapi.models.point_vectors.PointVectors(
                             id = null, 
                             vector = null, )
                         ], 
                     shard_key = null, ),
-                delete_vectors = openapi_client.models.delete_vectors.DeleteVectors(
+                delete_vectors = qdrant_openapi.models.delete_vectors.DeleteVectors(
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 

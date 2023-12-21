@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.vector_storage_type import VectorStorageType  # noqa: E501
+from qdrant_openapi.models.vector_storage_type import VectorStorageType  # noqa: E501
 
 class TestVectorStorageType(unittest.TestCase):
     """VectorStorageType unit test stubs"""

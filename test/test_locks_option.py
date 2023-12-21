@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.locks_option import LocksOption  # noqa: E501
+from qdrant_openapi.models.locks_option import LocksOption  # noqa: E501
 
 class TestLocksOption(unittest.TestCase):
     """LocksOption unit test stubs"""

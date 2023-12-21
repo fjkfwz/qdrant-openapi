@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.point_struct import PointStruct  # noqa: E501
+from qdrant_openapi.models.point_struct import PointStruct  # noqa: E501
 
 class TestPointStruct(unittest.TestCase):
     """PointStruct unit test stubs"""

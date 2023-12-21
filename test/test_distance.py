@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.distance import Distance  # noqa: E501
+from qdrant_openapi.models.distance import Distance  # noqa: E501
 
 class TestDistance(unittest.TestCase):
     """Distance unit test stubs"""

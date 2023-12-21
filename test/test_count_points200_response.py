@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.count_points200_response import CountPoints200Response  # noqa: E501
+from qdrant_openapi.models.count_points200_response import CountPoints200Response  # noqa: E501
 
 class TestCountPoints200Response(unittest.TestCase):
     """CountPoints200Response unit test stubs"""
@@ -39,7 +39,7 @@ class TestCountPoints200Response(unittest.TestCase):
             return CountPoints200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.count_result.CountResult(
+                result = qdrant_openapi.models.count_result.CountResult(
                     count = 0, )
             )
         else:

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.compression_ratio import CompressionRatio  # noqa: E501
+from qdrant_openapi.models.compression_ratio import CompressionRatio  # noqa: E501
 
 class TestCompressionRatio(unittest.TestCase):
     """CompressionRatio unit test stubs"""

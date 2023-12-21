@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.group_id import GroupId  # noqa: E501
+from qdrant_openapi.models.group_id import GroupId  # noqa: E501
 
 class TestGroupId(unittest.TestCase):
     """GroupId unit test stubs"""

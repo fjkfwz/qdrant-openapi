@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.vector_struct import VectorStruct  # noqa: E501
+from qdrant_openapi.models.vector_struct import VectorStruct  # noqa: E501
 
 class TestVectorStruct(unittest.TestCase):
     """VectorStruct unit test stubs"""

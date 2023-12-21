@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.delete_alias import DeleteAlias  # noqa: E501
+from qdrant_openapi.models.delete_alias import DeleteAlias  # noqa: E501
 
 class TestDeleteAlias(unittest.TestCase):
     """DeleteAlias unit test stubs"""

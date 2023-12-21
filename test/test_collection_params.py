@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collection_params import CollectionParams  # noqa: E501
+from qdrant_openapi.models.collection_params import CollectionParams  # noqa: E501
 
 class TestCollectionParams(unittest.TestCase):
     """CollectionParams unit test stubs"""
@@ -45,8 +45,8 @@ class TestCollectionParams(unittest.TestCase):
                 read_fan_out_factor = 0,
                 on_disk_payload = True,
                 sparse_vectors = {
-                    'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                        index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                    'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                        index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                             full_scan_threshold = 0, 
                             on_disk = True, ), )
                     }

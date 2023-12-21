@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.remote_shard_telemetry import RemoteShardTelemetry  # noqa: E501
+from qdrant_openapi.models.remote_shard_telemetry import RemoteShardTelemetry  # noqa: E501
 
 class TestRemoteShardTelemetry(unittest.TestCase):
     """RemoteShardTelemetry unit test stubs"""
@@ -39,14 +39,14 @@ class TestRemoteShardTelemetry(unittest.TestCase):
             return RemoteShardTelemetry(
                 shard_id = 0,
                 peer_id = 0,
-                searches = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                searches = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                updates = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                updates = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
@@ -57,14 +57,14 @@ class TestRemoteShardTelemetry(unittest.TestCase):
         else:
             return RemoteShardTelemetry(
                 shard_id = 0,
-                searches = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                searches = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                updates = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                updates = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 

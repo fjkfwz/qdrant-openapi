@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.shard_key_selector import ShardKeySelector  # noqa: E501
+from qdrant_openapi.models.shard_key_selector import ShardKeySelector  # noqa: E501
 
 class TestShardKeySelector(unittest.TestCase):
     """ShardKeySelector unit test stubs"""

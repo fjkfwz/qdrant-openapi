@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.drop_sharding_key_operation import DropShardingKeyOperation  # noqa: E501
+from qdrant_openapi.models.drop_sharding_key_operation import DropShardingKeyOperation  # noqa: E501
 
 class TestDropShardingKeyOperation(unittest.TestCase):
     """DropShardingKeyOperation unit test stubs"""
@@ -37,12 +37,12 @@ class TestDropShardingKeyOperation(unittest.TestCase):
         model = DropShardingKeyOperation()  # noqa: E501
         if include_optional:
             return DropShardingKeyOperation(
-                drop_sharding_key = openapi_client.models.drop_sharding_key.DropShardingKey(
+                drop_sharding_key = qdrant_openapi.models.drop_sharding_key.DropShardingKey(
                     shard_key = null, )
             )
         else:
             return DropShardingKeyOperation(
-                drop_sharding_key = openapi_client.models.drop_sharding_key.DropShardingKey(
+                drop_sharding_key = qdrant_openapi.models.drop_sharding_key.DropShardingKey(
                     shard_key = null, ),
         )
         """

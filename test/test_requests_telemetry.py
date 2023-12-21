@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.requests_telemetry import RequestsTelemetry  # noqa: E501
+from qdrant_openapi.models.requests_telemetry import RequestsTelemetry  # noqa: E501
 
 class TestRequestsTelemetry(unittest.TestCase):
     """RequestsTelemetry unit test stubs"""
@@ -37,10 +37,10 @@ class TestRequestsTelemetry(unittest.TestCase):
         model = RequestsTelemetry()  # noqa: E501
         if include_optional:
             return RequestsTelemetry(
-                rest = openapi_client.models.web_api_telemetry.WebApiTelemetry(
+                rest = qdrant_openapi.models.web_api_telemetry.WebApiTelemetry(
                     responses = {
                         'key' : {
-                            'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                            'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                 count = 0, 
                                 fail_count = 0, 
                                 avg_duration_micros = 1.337, 
@@ -49,9 +49,9 @@ class TestRequestsTelemetry(unittest.TestCase):
                                 last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                             }
                         }, ),
-                grpc = openapi_client.models.grpc_telemetry.GrpcTelemetry(
+                grpc = qdrant_openapi.models.grpc_telemetry.GrpcTelemetry(
                     responses = {
-                        'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 
@@ -62,10 +62,10 @@ class TestRequestsTelemetry(unittest.TestCase):
             )
         else:
             return RequestsTelemetry(
-                rest = openapi_client.models.web_api_telemetry.WebApiTelemetry(
+                rest = qdrant_openapi.models.web_api_telemetry.WebApiTelemetry(
                     responses = {
                         'key' : {
-                            'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                            'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                 count = 0, 
                                 fail_count = 0, 
                                 avg_duration_micros = 1.337, 
@@ -74,9 +74,9 @@ class TestRequestsTelemetry(unittest.TestCase):
                                 last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                             }
                         }, ),
-                grpc = openapi_client.models.grpc_telemetry.GrpcTelemetry(
+                grpc = qdrant_openapi.models.grpc_telemetry.GrpcTelemetry(
                     responses = {
-                        'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 

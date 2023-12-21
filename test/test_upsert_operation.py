@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.upsert_operation import UpsertOperation  # noqa: E501
+from qdrant_openapi.models.upsert_operation import UpsertOperation  # noqa: E501
 
 class TestUpsertOperation(unittest.TestCase):
     """UpsertOperation unit test stubs"""

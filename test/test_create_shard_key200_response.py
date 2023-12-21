@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_shard_key200_response import CreateShardKey200Response  # noqa: E501
+from qdrant_openapi.models.create_shard_key200_response import CreateShardKey200Response  # noqa: E501
 
 class TestCreateShardKey200Response(unittest.TestCase):
     """CreateShardKey200Response unit test stubs"""

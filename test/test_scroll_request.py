@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scroll_request import ScrollRequest  # noqa: E501
+from qdrant_openapi.models.scroll_request import ScrollRequest  # noqa: E501
 
 class TestScrollRequest(unittest.TestCase):
     """ScrollRequest unit test stubs"""
@@ -40,7 +40,7 @@ class TestScrollRequest(unittest.TestCase):
                 shard_key = None,
                 offset = None,
                 limit = 1,
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

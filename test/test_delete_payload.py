@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.delete_payload import DeletePayload  # noqa: E501
+from qdrant_openapi.models.delete_payload import DeletePayload  # noqa: E501
 
 class TestDeletePayload(unittest.TestCase):
     """DeletePayload unit test stubs"""
@@ -43,7 +43,7 @@ class TestDeletePayload(unittest.TestCase):
                 points = [
                     null
                     ],
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

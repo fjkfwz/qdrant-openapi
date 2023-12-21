@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.grpc_telemetry import GrpcTelemetry  # noqa: E501
+from qdrant_openapi.models.grpc_telemetry import GrpcTelemetry  # noqa: E501
 
 class TestGrpcTelemetry(unittest.TestCase):
     """GrpcTelemetry unit test stubs"""
@@ -38,7 +38,7 @@ class TestGrpcTelemetry(unittest.TestCase):
         if include_optional:
             return GrpcTelemetry(
                 responses = {
-                    'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                    'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                         count = 0, 
                         fail_count = 0, 
                         avg_duration_micros = 1.337, 
@@ -50,7 +50,7 @@ class TestGrpcTelemetry(unittest.TestCase):
         else:
             return GrpcTelemetry(
                 responses = {
-                    'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                    'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                         count = 0, 
                         fail_count = 0, 
                         avg_duration_micros = 1.337, 

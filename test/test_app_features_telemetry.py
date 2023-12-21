@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.app_features_telemetry import AppFeaturesTelemetry  # noqa: E501
+from qdrant_openapi.models.app_features_telemetry import AppFeaturesTelemetry  # noqa: E501
 
 class TestAppFeaturesTelemetry(unittest.TestCase):
     """AppFeaturesTelemetry unit test stubs"""

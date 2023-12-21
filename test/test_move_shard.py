@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.move_shard import MoveShard  # noqa: E501
+from qdrant_openapi.models.move_shard import MoveShard  # noqa: E501
 
 class TestMoveShard(unittest.TestCase):
     """MoveShard unit test stubs"""

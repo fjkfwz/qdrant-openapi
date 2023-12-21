@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.overwrite_payload_operation import OverwritePayloadOperation  # noqa: E501
+from qdrant_openapi.models.overwrite_payload_operation import OverwritePayloadOperation  # noqa: E501
 
 class TestOverwritePayloadOperation(unittest.TestCase):
     """OverwritePayloadOperation unit test stubs"""
@@ -37,12 +37,12 @@ class TestOverwritePayloadOperation(unittest.TestCase):
         model = OverwritePayloadOperation()  # noqa: E501
         if include_optional:
             return OverwritePayloadOperation(
-                overwrite_payload = openapi_client.models.set_payload.SetPayload(
+                overwrite_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -56,12 +56,12 @@ class TestOverwritePayloadOperation(unittest.TestCase):
             )
         else:
             return OverwritePayloadOperation(
-                overwrite_payload = openapi_client.models.set_payload.SetPayload(
+                overwrite_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 

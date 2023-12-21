@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.init_from import InitFrom  # noqa: E501
+from qdrant_openapi.models.init_from import InitFrom  # noqa: E501
 
 class TestInitFrom(unittest.TestCase):
     """InitFrom unit test stubs"""

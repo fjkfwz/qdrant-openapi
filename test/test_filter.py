@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.filter import Filter  # noqa: E501
+from qdrant_openapi.models.filter import Filter  # noqa: E501
 
 class TestFilter(unittest.TestCase):
     """Filter unit test stubs"""

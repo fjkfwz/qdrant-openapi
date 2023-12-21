@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.record import Record  # noqa: E501
+from qdrant_openapi.models.record import Record  # noqa: E501
 
 class TestRecord(unittest.TestCase):
     """Record unit test stubs"""

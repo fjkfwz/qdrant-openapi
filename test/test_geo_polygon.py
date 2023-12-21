@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.geo_polygon import GeoPolygon  # noqa: E501
+from qdrant_openapi.models.geo_polygon import GeoPolygon  # noqa: E501
 
 class TestGeoPolygon(unittest.TestCase):
     """GeoPolygon unit test stubs"""
@@ -37,16 +37,16 @@ class TestGeoPolygon(unittest.TestCase):
         model = GeoPolygon()  # noqa: E501
         if include_optional:
             return GeoPolygon(
-                exterior = openapi_client.models.geo_line_string.GeoLineString(
+                exterior = qdrant_openapi.models.geo_line_string.GeoLineString(
                     points = [
-                        openapi_client.models.geo_point.GeoPoint(
+                        qdrant_openapi.models.geo_point.GeoPoint(
                             lon = 1.337, 
                             lat = 1.337, )
                         ], ),
                 interiors = [
-                    openapi_client.models.geo_line_string.GeoLineString(
+                    qdrant_openapi.models.geo_line_string.GeoLineString(
                         points = [
-                            openapi_client.models.geo_point.GeoPoint(
+                            qdrant_openapi.models.geo_point.GeoPoint(
                                 lon = 1.337, 
                                 lat = 1.337, )
                             ], )
@@ -54,9 +54,9 @@ class TestGeoPolygon(unittest.TestCase):
             )
         else:
             return GeoPolygon(
-                exterior = openapi_client.models.geo_line_string.GeoLineString(
+                exterior = qdrant_openapi.models.geo_line_string.GeoLineString(
                     points = [
-                        openapi_client.models.geo_point.GeoPoint(
+                        qdrant_openapi.models.geo_point.GeoPoint(
                             lon = 1.337, 
                             lat = 1.337, )
                         ], ),

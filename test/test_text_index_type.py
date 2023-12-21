@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.text_index_type import TextIndexType  # noqa: E501
+from qdrant_openapi.models.text_index_type import TextIndexType  # noqa: E501
 
 class TestTextIndexType(unittest.TestCase):
     """TextIndexType unit test stubs"""

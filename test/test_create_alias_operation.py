@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_alias_operation import CreateAliasOperation  # noqa: E501
+from qdrant_openapi.models.create_alias_operation import CreateAliasOperation  # noqa: E501
 
 class TestCreateAliasOperation(unittest.TestCase):
     """CreateAliasOperation unit test stubs"""
@@ -37,13 +37,13 @@ class TestCreateAliasOperation(unittest.TestCase):
         model = CreateAliasOperation()  # noqa: E501
         if include_optional:
             return CreateAliasOperation(
-                create_alias = openapi_client.models.create_alias.CreateAlias(
+                create_alias = qdrant_openapi.models.create_alias.CreateAlias(
                     collection_name = '', 
                     alias_name = '', )
             )
         else:
             return CreateAliasOperation(
-                create_alias = openapi_client.models.create_alias.CreateAlias(
+                create_alias = qdrant_openapi.models.create_alias.CreateAlias(
                     collection_name = '', 
                     alias_name = '', ),
         )

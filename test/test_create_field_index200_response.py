@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_field_index200_response import CreateFieldIndex200Response  # noqa: E501
+from qdrant_openapi.models.create_field_index200_response import CreateFieldIndex200Response  # noqa: E501
 
 class TestCreateFieldIndex200Response(unittest.TestCase):
     """CreateFieldIndex200Response unit test stubs"""
@@ -39,7 +39,7 @@ class TestCreateFieldIndex200Response(unittest.TestCase):
             return CreateFieldIndex200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.update_result.UpdateResult(
+                result = qdrant_openapi.models.update_result.UpdateResult(
                     operation_id = 0, 
                     status = 'acknowledged', )
             )

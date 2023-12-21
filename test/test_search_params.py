@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.search_params import SearchParams  # noqa: E501
+from qdrant_openapi.models.search_params import SearchParams  # noqa: E501
 
 class TestSearchParams(unittest.TestCase):
     """SearchParams unit test stubs"""
@@ -39,7 +39,7 @@ class TestSearchParams(unittest.TestCase):
             return SearchParams(
                 hnsw_ef = 0,
                 exact = True,
-                quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                     ignore = True, 
                     rescore = True, 
                     oversampling = 1, ),

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.snapshot_priority import SnapshotPriority  # noqa: E501
+from qdrant_openapi.models.snapshot_priority import SnapshotPriority  # noqa: E501
 
 class TestSnapshotPriority(unittest.TestCase):
     """SnapshotPriority unit test stubs"""

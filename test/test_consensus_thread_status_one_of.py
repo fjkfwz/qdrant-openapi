@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.consensus_thread_status_one_of import ConsensusThreadStatusOneOf  # noqa: E501
+from qdrant_openapi.models.consensus_thread_status_one_of import ConsensusThreadStatusOneOf  # noqa: E501
 
 class TestConsensusThreadStatusOneOf(unittest.TestCase):
     """ConsensusThreadStatusOneOf unit test stubs"""

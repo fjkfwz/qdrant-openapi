@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.product_quantization import ProductQuantization  # noqa: E501
+from qdrant_openapi.models.product_quantization import ProductQuantization  # noqa: E501
 
 class TestProductQuantization(unittest.TestCase):
     """ProductQuantization unit test stubs"""
@@ -37,13 +37,13 @@ class TestProductQuantization(unittest.TestCase):
         model = ProductQuantization()  # noqa: E501
         if include_optional:
             return ProductQuantization(
-                product = openapi_client.models.product_quantization_config.ProductQuantizationConfig(
+                product = qdrant_openapi.models.product_quantization_config.ProductQuantizationConfig(
                     compression = 'x4', 
                     always_ram = True, )
             )
         else:
             return ProductQuantization(
-                product = openapi_client.models.product_quantization_config.ProductQuantizationConfig(
+                product = qdrant_openapi.models.product_quantization_config.ProductQuantizationConfig(
                     compression = 'x4', 
                     always_ram = True, ),
         )

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.replicate_shard_operation import ReplicateShardOperation  # noqa: E501
+from qdrant_openapi.models.replicate_shard_operation import ReplicateShardOperation  # noqa: E501
 
 class TestReplicateShardOperation(unittest.TestCase):
     """ReplicateShardOperation unit test stubs"""
@@ -37,7 +37,7 @@ class TestReplicateShardOperation(unittest.TestCase):
         model = ReplicateShardOperation()  # noqa: E501
         if include_optional:
             return ReplicateShardOperation(
-                replicate_shard = openapi_client.models.move_shard.MoveShard(
+                replicate_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
@@ -45,7 +45,7 @@ class TestReplicateShardOperation(unittest.TestCase):
             )
         else:
             return ReplicateShardOperation(
-                replicate_shard = openapi_client.models.move_shard.MoveShard(
+                replicate_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.binary_quantization_config import BinaryQuantizationConfig  # noqa: E501
+from qdrant_openapi.models.binary_quantization_config import BinaryQuantizationConfig  # noqa: E501
 
 class TestBinaryQuantizationConfig(unittest.TestCase):
     """BinaryQuantizationConfig unit test stubs"""

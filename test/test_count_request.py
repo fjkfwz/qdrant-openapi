@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.count_request import CountRequest  # noqa: E501
+from qdrant_openapi.models.count_request import CountRequest  # noqa: E501
 
 class TestCountRequest(unittest.TestCase):
     """CountRequest unit test stubs"""
@@ -38,7 +38,7 @@ class TestCountRequest(unittest.TestCase):
         if include_optional:
             return CountRequest(
                 shard_key = None,
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

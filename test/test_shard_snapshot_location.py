@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.shard_snapshot_location import ShardSnapshotLocation  # noqa: E501
+from qdrant_openapi.models.shard_snapshot_location import ShardSnapshotLocation  # noqa: E501
 
 class TestShardSnapshotLocation(unittest.TestCase):
     """ShardSnapshotLocation unit test stubs"""

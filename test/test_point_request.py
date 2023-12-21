@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.point_request import PointRequest  # noqa: E501
+from qdrant_openapi.models.point_request import PointRequest  # noqa: E501
 
 class TestPointRequest(unittest.TestCase):
     """PointRequest unit test stubs"""

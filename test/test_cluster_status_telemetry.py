@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.cluster_status_telemetry import ClusterStatusTelemetry  # noqa: E501
+from qdrant_openapi.models.cluster_status_telemetry import ClusterStatusTelemetry  # noqa: E501
 
 class TestClusterStatusTelemetry(unittest.TestCase):
     """ClusterStatusTelemetry unit test stubs"""

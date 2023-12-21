@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.recommend_groups_request import RecommendGroupsRequest  # noqa: E501
+from qdrant_openapi.models.recommend_groups_request import RecommendGroupsRequest  # noqa: E501
 
 class TestRecommendGroupsRequest(unittest.TestCase):
     """RecommendGroupsRequest unit test stubs"""
@@ -45,7 +45,7 @@ class TestRecommendGroupsRequest(unittest.TestCase):
                     null
                     ],
                 strategy = 'average_vector',
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 
@@ -55,10 +55,10 @@ class TestRecommendGroupsRequest(unittest.TestCase):
                     must_not = [
                         null
                         ], ),
-                params = openapi_client.models.search_params.SearchParams(
+                params = qdrant_openapi.models.search_params.SearchParams(
                     hnsw_ef = 0, 
                     exact = True, 
-                    quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                    quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                         ignore = True, 
                         rescore = True, 
                         oversampling = 1, ), 
@@ -67,7 +67,7 @@ class TestRecommendGroupsRequest(unittest.TestCase):
                 with_vector = None,
                 score_threshold = 1.337,
                 using = '',
-                lookup_from = openapi_client.models.lookup_location.LookupLocation(
+                lookup_from = qdrant_openapi.models.lookup_location.LookupLocation(
                     collection = '', 
                     vector = '', 
                     shard_key = null, ),

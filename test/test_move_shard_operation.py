@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.move_shard_operation import MoveShardOperation  # noqa: E501
+from qdrant_openapi.models.move_shard_operation import MoveShardOperation  # noqa: E501
 
 class TestMoveShardOperation(unittest.TestCase):
     """MoveShardOperation unit test stubs"""
@@ -37,7 +37,7 @@ class TestMoveShardOperation(unittest.TestCase):
         model = MoveShardOperation()  # noqa: E501
         if include_optional:
             return MoveShardOperation(
-                move_shard = openapi_client.models.move_shard.MoveShard(
+                move_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
@@ -45,7 +45,7 @@ class TestMoveShardOperation(unittest.TestCase):
             )
         else:
             return MoveShardOperation(
-                move_shard = openapi_client.models.move_shard.MoveShard(
+                move_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 

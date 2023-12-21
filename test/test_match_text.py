@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.match_text import MatchText  # noqa: E501
+from qdrant_openapi.models.match_text import MatchText  # noqa: E501
 
 class TestMatchText(unittest.TestCase):
     """MatchText unit test stubs"""

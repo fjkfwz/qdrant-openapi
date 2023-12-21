@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.cluster_status_one_of1 import ClusterStatusOneOf1  # noqa: E501
+from qdrant_openapi.models.cluster_status_one_of1 import ClusterStatusOneOf1  # noqa: E501
 
 class TestClusterStatusOneOf1(unittest.TestCase):
     """ClusterStatusOneOf1 unit test stubs"""
@@ -40,10 +40,10 @@ class TestClusterStatusOneOf1(unittest.TestCase):
                 status = 'enabled',
                 peer_id = 0,
                 peers = {
-                    'key' : openapi_client.models.peer_info.PeerInfo(
+                    'key' : qdrant_openapi.models.peer_info.PeerInfo(
                         uri = '', )
                     },
-                raft_info = openapi_client.models.raft_info.RaftInfo(
+                raft_info = qdrant_openapi.models.raft_info.RaftInfo(
                     term = 0, 
                     commit = 0, 
                     pending_operations = 0, 
@@ -52,7 +52,7 @@ class TestClusterStatusOneOf1(unittest.TestCase):
                     is_voter = True, ),
                 consensus_thread_status = None,
                 message_send_failures = {
-                    'key' : openapi_client.models.message_send_errors.MessageSendErrors(
+                    'key' : qdrant_openapi.models.message_send_errors.MessageSendErrors(
                         count = 0, 
                         latest_error = '', )
                     }
@@ -62,10 +62,10 @@ class TestClusterStatusOneOf1(unittest.TestCase):
                 status = 'enabled',
                 peer_id = 0,
                 peers = {
-                    'key' : openapi_client.models.peer_info.PeerInfo(
+                    'key' : qdrant_openapi.models.peer_info.PeerInfo(
                         uri = '', )
                     },
-                raft_info = openapi_client.models.raft_info.RaftInfo(
+                raft_info = qdrant_openapi.models.raft_info.RaftInfo(
                     term = 0, 
                     commit = 0, 
                     pending_operations = 0, 
@@ -74,7 +74,7 @@ class TestClusterStatusOneOf1(unittest.TestCase):
                     is_voter = True, ),
                 consensus_thread_status = None,
                 message_send_failures = {
-                    'key' : openapi_client.models.message_send_errors.MessageSendErrors(
+                    'key' : qdrant_openapi.models.message_send_errors.MessageSendErrors(
                         count = 0, 
                         latest_error = '', )
                     },

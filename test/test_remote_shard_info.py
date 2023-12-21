@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.remote_shard_info import RemoteShardInfo  # noqa: E501
+from qdrant_openapi.models.remote_shard_info import RemoteShardInfo  # noqa: E501
 
 class TestRemoteShardInfo(unittest.TestCase):
     """RemoteShardInfo unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.telemetry200_response import Telemetry200Response  # noqa: E501
+from qdrant_openapi.models.telemetry200_response import Telemetry200Response  # noqa: E501
 
 class TestTelemetry200Response(unittest.TestCase):
     """Telemetry200Response unit test stubs"""
@@ -39,17 +39,17 @@ class TestTelemetry200Response(unittest.TestCase):
             return Telemetry200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.telemetry_data.TelemetryData(
+                result = qdrant_openapi.models.telemetry_data.TelemetryData(
                     id = '', 
-                    app = openapi_client.models.app_build_telemetry.AppBuildTelemetry(
+                    app = qdrant_openapi.models.app_build_telemetry.AppBuildTelemetry(
                         name = '', 
                         version = '', 
-                        features = openapi_client.models.app_features_telemetry.AppFeaturesTelemetry(
+                        features = qdrant_openapi.models.app_features_telemetry.AppFeaturesTelemetry(
                             debug = True, 
                             web_feature = True, 
                             service_debug_feature = True, 
                             recovery_mode = True, ), 
-                        system = openapi_client.models.running_environment_telemetry.RunningEnvironmentTelemetry(
+                        system = qdrant_openapi.models.running_environment_telemetry.RunningEnvironmentTelemetry(
                             distribution = '', 
                             distribution_version = '', 
                             is_docker = True, 
@@ -58,11 +58,11 @@ class TestTelemetry200Response(unittest.TestCase):
                             disk_size = 0, 
                             cpu_flags = '', ), 
                         startup = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ), 
-                    collections = openapi_client.models.collections_telemetry.CollectionsTelemetry(
+                    collections = qdrant_openapi.models.collections_telemetry.CollectionsTelemetry(
                         number_of_collections = 0, ), 
-                    cluster = openapi_client.models.cluster_telemetry.ClusterTelemetry(
+                    cluster = qdrant_openapi.models.cluster_telemetry.ClusterTelemetry(
                         enabled = True, 
-                        status = openapi_client.models.cluster_status_telemetry.ClusterStatusTelemetry(
+                        status = qdrant_openapi.models.cluster_status_telemetry.ClusterStatusTelemetry(
                             number_of_peers = 0, 
                             term = 0, 
                             commit = 0, 
@@ -71,19 +71,19 @@ class TestTelemetry200Response(unittest.TestCase):
                             is_voter = True, 
                             peer_id = 0, 
                             consensus_thread_status = null, ), 
-                        config = openapi_client.models.cluster_config_telemetry.ClusterConfigTelemetry(
+                        config = qdrant_openapi.models.cluster_config_telemetry.ClusterConfigTelemetry(
                             grpc_timeout_ms = 0, 
-                            p2p = openapi_client.models.p2p_config_telemetry.P2pConfigTelemetry(
+                            p2p = qdrant_openapi.models.p2p_config_telemetry.P2pConfigTelemetry(
                                 connection_pool_size = 0, ), 
-                            consensus = openapi_client.models.consensus_config_telemetry.ConsensusConfigTelemetry(
+                            consensus = qdrant_openapi.models.consensus_config_telemetry.ConsensusConfigTelemetry(
                                 max_message_queue_size = 0, 
                                 tick_period_ms = 0, 
                                 bootstrap_timeout_sec = 0, ), ), ), 
-                    requests = openapi_client.models.requests_telemetry.RequestsTelemetry(
-                        rest = openapi_client.models.web_api_telemetry.WebApiTelemetry(
+                    requests = qdrant_openapi.models.requests_telemetry.RequestsTelemetry(
+                        rest = qdrant_openapi.models.web_api_telemetry.WebApiTelemetry(
                             responses = {
                                 'key' : {
-                                    'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                    'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                         count = 0, 
                                         fail_count = 0, 
                                         avg_duration_micros = 1.337, 
@@ -92,9 +92,9 @@ class TestTelemetry200Response(unittest.TestCase):
                                         last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                                     }
                                 }, ), 
-                        grpc = openapi_client.models.grpc_telemetry.GrpcTelemetry(
+                        grpc = qdrant_openapi.models.grpc_telemetry.GrpcTelemetry(
                             responses = {
-                                'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                     count = 0, 
                                     fail_count = 0, 
                                     avg_duration_micros = 1.337, 

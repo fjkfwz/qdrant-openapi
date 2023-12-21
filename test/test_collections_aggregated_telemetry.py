@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collections_aggregated_telemetry import CollectionsAggregatedTelemetry  # noqa: E501
+from qdrant_openapi.models.collections_aggregated_telemetry import CollectionsAggregatedTelemetry  # noqa: E501
 
 class TestCollectionsAggregatedTelemetry(unittest.TestCase):
     """CollectionsAggregatedTelemetry unit test stubs"""
@@ -39,7 +39,7 @@ class TestCollectionsAggregatedTelemetry(unittest.TestCase):
             return CollectionsAggregatedTelemetry(
                 vectors = 0,
                 optimizers_status = None,
-                params = openapi_client.models.collection_params.CollectionParams(
+                params = qdrant_openapi.models.collection_params.CollectionParams(
                     vectors = null, 
                     shard_number = 1, 
                     sharding_method = 'auto', 
@@ -48,8 +48,8 @@ class TestCollectionsAggregatedTelemetry(unittest.TestCase):
                     read_fan_out_factor = 0, 
                     on_disk_payload = True, 
                     sparse_vectors = {
-                        'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                            index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                        'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                            index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                 full_scan_threshold = 0, 
                                 on_disk = True, ), )
                         }, )
@@ -58,7 +58,7 @@ class TestCollectionsAggregatedTelemetry(unittest.TestCase):
             return CollectionsAggregatedTelemetry(
                 vectors = 0,
                 optimizers_status = None,
-                params = openapi_client.models.collection_params.CollectionParams(
+                params = qdrant_openapi.models.collection_params.CollectionParams(
                     vectors = null, 
                     shard_number = 1, 
                     sharding_method = 'auto', 
@@ -67,8 +67,8 @@ class TestCollectionsAggregatedTelemetry(unittest.TestCase):
                     read_fan_out_factor = 0, 
                     on_disk_payload = True, 
                     sparse_vectors = {
-                        'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                            index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                        'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                            index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                 full_scan_threshold = 0, 
                                 on_disk = True, ), )
                         }, ),

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.segment_type import SegmentType  # noqa: E501
+from qdrant_openapi.models.segment_type import SegmentType  # noqa: E501
 
 class TestSegmentType(unittest.TestCase):
     """SegmentType unit test stubs"""

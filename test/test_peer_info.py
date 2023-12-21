@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.peer_info import PeerInfo  # noqa: E501
+from qdrant_openapi.models.peer_info import PeerInfo  # noqa: E501
 
 class TestPeerInfo(unittest.TestCase):
     """PeerInfo unit test stubs"""

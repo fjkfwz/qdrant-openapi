@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.payload_field import PayloadField  # noqa: E501
+from qdrant_openapi.models.payload_field import PayloadField  # noqa: E501
 
 class TestPayloadField(unittest.TestCase):
     """PayloadField unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.discover_request import DiscoverRequest  # noqa: E501
+from qdrant_openapi.models.discover_request import DiscoverRequest  # noqa: E501
 
 class TestDiscoverRequest(unittest.TestCase):
     """DiscoverRequest unit test stubs"""
@@ -40,11 +40,11 @@ class TestDiscoverRequest(unittest.TestCase):
                 shard_key = None,
                 target = None,
                 context = [
-                    openapi_client.models.context_example_pair.ContextExamplePair(
+                    qdrant_openapi.models.context_example_pair.ContextExamplePair(
                         positive = null, 
                         negative = null, )
                     ],
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 
@@ -54,10 +54,10 @@ class TestDiscoverRequest(unittest.TestCase):
                     must_not = [
                         null
                         ], ),
-                params = openapi_client.models.search_params.SearchParams(
+                params = qdrant_openapi.models.search_params.SearchParams(
                     hnsw_ef = 0, 
                     exact = True, 
-                    quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                    quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                         ignore = True, 
                         rescore = True, 
                         oversampling = 1, ), 
@@ -67,7 +67,7 @@ class TestDiscoverRequest(unittest.TestCase):
                 with_payload = None,
                 with_vector = None,
                 using = '',
-                lookup_from = openapi_client.models.lookup_location.LookupLocation(
+                lookup_from = qdrant_openapi.models.lookup_location.LookupLocation(
                     collection = '', 
                     vector = '', 
                     shard_key = null, )

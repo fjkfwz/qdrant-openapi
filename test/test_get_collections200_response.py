@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_collections200_response import GetCollections200Response  # noqa: E501
+from qdrant_openapi.models.get_collections200_response import GetCollections200Response  # noqa: E501
 
 class TestGetCollections200Response(unittest.TestCase):
     """GetCollections200Response unit test stubs"""
@@ -39,9 +39,9 @@ class TestGetCollections200Response(unittest.TestCase):
             return GetCollections200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.collections_response.CollectionsResponse(
+                result = qdrant_openapi.models.collections_response.CollectionsResponse(
                     collections = [
-                        openapi_client.models.collection_description.CollectionDescription(
+                        qdrant_openapi.models.collection_description.CollectionDescription(
                             name = '', )
                         ], )
             )

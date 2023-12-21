@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.sparse_vector_params import SparseVectorParams  # noqa: E501
+from qdrant_openapi.models.sparse_vector_params import SparseVectorParams  # noqa: E501
 
 class TestSparseVectorParams(unittest.TestCase):
     """SparseVectorParams unit test stubs"""
@@ -37,7 +37,7 @@ class TestSparseVectorParams(unittest.TestCase):
         model = SparseVectorParams()  # noqa: E501
         if include_optional:
             return SparseVectorParams(
-                index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                     full_scan_threshold = 0, 
                     on_disk = True, )
             )

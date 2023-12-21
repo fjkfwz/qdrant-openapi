@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.batch_update200_response import BatchUpdate200Response  # noqa: E501
+from qdrant_openapi.models.batch_update200_response import BatchUpdate200Response  # noqa: E501
 
 class TestBatchUpdate200Response(unittest.TestCase):
     """BatchUpdate200Response unit test stubs"""
@@ -40,7 +40,7 @@ class TestBatchUpdate200Response(unittest.TestCase):
                 time = 1.337,
                 status = '',
                 result = [
-                    openapi_client.models.update_result.UpdateResult(
+                    qdrant_openapi.models.update_result.UpdateResult(
                         operation_id = 0, 
                         status = 'acknowledged', )
                     ]

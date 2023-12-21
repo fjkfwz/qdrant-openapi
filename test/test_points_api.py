@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.points_api import PointsApi  # noqa: E501
+from qdrant_openapi.api.points_api import PointsApi  # noqa: E501
 
 
 class TestPointsApi(unittest.TestCase):

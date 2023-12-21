@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.payload_selector import PayloadSelector  # noqa: E501
+from qdrant_openapi.models.payload_selector import PayloadSelector  # noqa: E501
 
 class TestPayloadSelector(unittest.TestCase):
     """PayloadSelector unit test stubs"""

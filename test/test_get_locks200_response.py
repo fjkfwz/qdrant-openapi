@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_locks200_response import GetLocks200Response  # noqa: E501
+from qdrant_openapi.models.get_locks200_response import GetLocks200Response  # noqa: E501
 
 class TestGetLocks200Response(unittest.TestCase):
     """GetLocks200Response unit test stubs"""
@@ -39,7 +39,7 @@ class TestGetLocks200Response(unittest.TestCase):
             return GetLocks200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.locks_option.LocksOption(
+                result = qdrant_openapi.models.locks_option.LocksOption(
                     error_message = '', 
                     write = True, )
             )

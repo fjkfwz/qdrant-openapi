@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.raft_info import RaftInfo  # noqa: E501
+from qdrant_openapi.models.raft_info import RaftInfo  # noqa: E501
 
 class TestRaftInfo(unittest.TestCase):
     """RaftInfo unit test stubs"""

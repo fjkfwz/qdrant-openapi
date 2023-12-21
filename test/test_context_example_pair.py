@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.context_example_pair import ContextExamplePair  # noqa: E501
+from qdrant_openapi.models.context_example_pair import ContextExamplePair  # noqa: E501
 
 class TestContextExamplePair(unittest.TestCase):
     """ContextExamplePair unit test stubs"""

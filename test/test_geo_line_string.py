@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.geo_line_string import GeoLineString  # noqa: E501
+from qdrant_openapi.models.geo_line_string import GeoLineString  # noqa: E501
 
 class TestGeoLineString(unittest.TestCase):
     """GeoLineString unit test stubs"""
@@ -38,7 +38,7 @@ class TestGeoLineString(unittest.TestCase):
         if include_optional:
             return GeoLineString(
                 points = [
-                    openapi_client.models.geo_point.GeoPoint(
+                    qdrant_openapi.models.geo_point.GeoPoint(
                         lon = 1.337, 
                         lat = 1.337, )
                     ]
@@ -46,7 +46,7 @@ class TestGeoLineString(unittest.TestCase):
         else:
             return GeoLineString(
                 points = [
-                    openapi_client.models.geo_point.GeoPoint(
+                    qdrant_openapi.models.geo_point.GeoPoint(
                         lon = 1.337, 
                         lat = 1.337, )
                     ],

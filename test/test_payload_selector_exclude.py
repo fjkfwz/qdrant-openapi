@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.payload_selector_exclude import PayloadSelectorExclude  # noqa: E501
+from qdrant_openapi.models.payload_selector_exclude import PayloadSelectorExclude  # noqa: E501
 
 class TestPayloadSelectorExclude(unittest.TestCase):
     """PayloadSelectorExclude unit test stubs"""

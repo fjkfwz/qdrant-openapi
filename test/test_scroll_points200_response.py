@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scroll_points200_response import ScrollPoints200Response  # noqa: E501
+from qdrant_openapi.models.scroll_points200_response import ScrollPoints200Response  # noqa: E501
 
 class TestScrollPoints200Response(unittest.TestCase):
     """ScrollPoints200Response unit test stubs"""
@@ -39,9 +39,9 @@ class TestScrollPoints200Response(unittest.TestCase):
             return ScrollPoints200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.scroll_result.ScrollResult(
+                result = qdrant_openapi.models.scroll_result.ScrollResult(
                     points = [
-                        openapi_client.models.record.Record(
+                        qdrant_openapi.models.record.Record(
                             id = null, 
                             payload = { }, 
                             vector = null, 

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_sharding_key_operation import CreateShardingKeyOperation  # noqa: E501
+from qdrant_openapi.models.create_sharding_key_operation import CreateShardingKeyOperation  # noqa: E501
 
 class TestCreateShardingKeyOperation(unittest.TestCase):
     """CreateShardingKeyOperation unit test stubs"""
@@ -37,7 +37,7 @@ class TestCreateShardingKeyOperation(unittest.TestCase):
         model = CreateShardingKeyOperation()  # noqa: E501
         if include_optional:
             return CreateShardingKeyOperation(
-                create_sharding_key = openapi_client.models.create_sharding_key.CreateShardingKey(
+                create_sharding_key = qdrant_openapi.models.create_sharding_key.CreateShardingKey(
                     shard_key = null, 
                     shards_number = 1, 
                     replication_factor = 1, 
@@ -47,7 +47,7 @@ class TestCreateShardingKeyOperation(unittest.TestCase):
             )
         else:
             return CreateShardingKeyOperation(
-                create_sharding_key = openapi_client.models.create_sharding_key.CreateShardingKey(
+                create_sharding_key = qdrant_openapi.models.create_sharding_key.CreateShardingKey(
                     shard_key = null, 
                     shards_number = 1, 
                     replication_factor = 1, 

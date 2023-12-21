@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.search_point_groups200_response import SearchPointGroups200Response  # noqa: E501
+from qdrant_openapi.models.search_point_groups200_response import SearchPointGroups200Response  # noqa: E501
 
 class TestSearchPointGroups200Response(unittest.TestCase):
     """SearchPointGroups200Response unit test stubs"""
@@ -39,11 +39,11 @@ class TestSearchPointGroups200Response(unittest.TestCase):
             return SearchPointGroups200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.groups_result.GroupsResult(
+                result = qdrant_openapi.models.groups_result.GroupsResult(
                     groups = [
-                        openapi_client.models.point_group.PointGroup(
+                        qdrant_openapi.models.point_group.PointGroup(
                             hits = [
-                                openapi_client.models.scored_point.ScoredPoint(
+                                qdrant_openapi.models.scored_point.ScoredPoint(
                                     id = null, 
                                     version = 0, 
                                     score = 1.337, 
@@ -52,7 +52,7 @@ class TestSearchPointGroups200Response(unittest.TestCase):
                                     shard_key = null, )
                                 ], 
                             id = null, 
-                            lookup = openapi_client.models.record.Record(
+                            lookup = qdrant_openapi.models.record.Record(
                                 id = null, ), )
                         ], )
             )

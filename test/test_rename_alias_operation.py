@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.rename_alias_operation import RenameAliasOperation  # noqa: E501
+from qdrant_openapi.models.rename_alias_operation import RenameAliasOperation  # noqa: E501
 
 class TestRenameAliasOperation(unittest.TestCase):
     """RenameAliasOperation unit test stubs"""
@@ -37,13 +37,13 @@ class TestRenameAliasOperation(unittest.TestCase):
         model = RenameAliasOperation()  # noqa: E501
         if include_optional:
             return RenameAliasOperation(
-                rename_alias = openapi_client.models.rename_alias.RenameAlias(
+                rename_alias = qdrant_openapi.models.rename_alias.RenameAlias(
                     old_alias_name = '', 
                     new_alias_name = '', )
             )
         else:
             return RenameAliasOperation(
-                rename_alias = openapi_client.models.rename_alias.RenameAlias(
+                rename_alias = qdrant_openapi.models.rename_alias.RenameAlias(
                     old_alias_name = '', 
                     new_alias_name = '', ),
         )

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.cluster_api import ClusterApi  # noqa: E501
+from qdrant_openapi.api.cluster_api import ClusterApi  # noqa: E501
 
 
 class TestClusterApi(unittest.TestCase):

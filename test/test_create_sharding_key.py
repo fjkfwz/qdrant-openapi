@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_sharding_key import CreateShardingKey  # noqa: E501
+from qdrant_openapi.models.create_sharding_key import CreateShardingKey  # noqa: E501
 
 class TestCreateShardingKey(unittest.TestCase):
     """CreateShardingKey unit test stubs"""

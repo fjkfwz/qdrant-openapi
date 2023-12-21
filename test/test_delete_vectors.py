@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.delete_vectors import DeleteVectors  # noqa: E501
+from qdrant_openapi.models.delete_vectors import DeleteVectors  # noqa: E501
 
 class TestDeleteVectors(unittest.TestCase):
     """DeleteVectors unit test stubs"""
@@ -40,7 +40,7 @@ class TestDeleteVectors(unittest.TestCase):
                 points = [
                     null
                     ],
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

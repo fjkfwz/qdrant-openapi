@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.named_sparse_vector import NamedSparseVector  # noqa: E501
+from qdrant_openapi.models.named_sparse_vector import NamedSparseVector  # noqa: E501
 
 class TestNamedSparseVector(unittest.TestCase):
     """NamedSparseVector unit test stubs"""
@@ -38,7 +38,7 @@ class TestNamedSparseVector(unittest.TestCase):
         if include_optional:
             return NamedSparseVector(
                 name = '',
-                vector = openapi_client.models.sparse_vector.SparseVector(
+                vector = qdrant_openapi.models.sparse_vector.SparseVector(
                     indices = [
                         0
                         ], 
@@ -49,7 +49,7 @@ class TestNamedSparseVector(unittest.TestCase):
         else:
             return NamedSparseVector(
                 name = '',
-                vector = openapi_client.models.sparse_vector.SparseVector(
+                vector = qdrant_openapi.models.sparse_vector.SparseVector(
                     indices = [
                         0
                         ], 

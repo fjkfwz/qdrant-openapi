@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.shard_transfer_method import ShardTransferMethod  # noqa: E501
+from qdrant_openapi.models.shard_transfer_method import ShardTransferMethod  # noqa: E501
 
 class TestShardTransferMethod(unittest.TestCase):
     """ShardTransferMethod unit test stubs"""

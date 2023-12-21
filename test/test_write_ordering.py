@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.write_ordering import WriteOrdering  # noqa: E501
+from qdrant_openapi.models.write_ordering import WriteOrdering  # noqa: E501
 
 class TestWriteOrdering(unittest.TestCase):
     """WriteOrdering unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.vectors_config import VectorsConfig  # noqa: E501
+from qdrant_openapi.models.vectors_config import VectorsConfig  # noqa: E501
 
 class TestVectorsConfig(unittest.TestCase):
     """VectorsConfig unit test stubs"""
@@ -39,7 +39,7 @@ class TestVectorsConfig(unittest.TestCase):
             return VectorsConfig(
                 size = 1,
                 distance = 'Cosine',
-                hnsw_config = openapi_client.models.hnsw_config_diff.HnswConfigDiff(
+                hnsw_config = qdrant_openapi.models.hnsw_config_diff.HnswConfigDiff(
                     m = 0, 
                     ef_construct = 4, 
                     full_scan_threshold = 10, 

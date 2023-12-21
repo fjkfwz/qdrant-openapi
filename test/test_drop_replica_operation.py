@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.drop_replica_operation import DropReplicaOperation  # noqa: E501
+from qdrant_openapi.models.drop_replica_operation import DropReplicaOperation  # noqa: E501
 
 class TestDropReplicaOperation(unittest.TestCase):
     """DropReplicaOperation unit test stubs"""
@@ -37,13 +37,13 @@ class TestDropReplicaOperation(unittest.TestCase):
         model = DropReplicaOperation()  # noqa: E501
         if include_optional:
             return DropReplicaOperation(
-                drop_replica = openapi_client.models.replica.Replica(
+                drop_replica = qdrant_openapi.models.replica.Replica(
                     shard_id = 0, 
                     peer_id = 0, )
             )
         else:
             return DropReplicaOperation(
-                drop_replica = openapi_client.models.replica.Replica(
+                drop_replica = qdrant_openapi.models.replica.Replica(
                     shard_id = 0, 
                     peer_id = 0, ),
         )

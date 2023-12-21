@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.filter_selector import FilterSelector  # noqa: E501
+from qdrant_openapi.models.filter_selector import FilterSelector  # noqa: E501
 
 class TestFilterSelector(unittest.TestCase):
     """FilterSelector unit test stubs"""
@@ -37,7 +37,7 @@ class TestFilterSelector(unittest.TestCase):
         model = FilterSelector()  # noqa: E501
         if include_optional:
             return FilterSelector(
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 
@@ -51,7 +51,7 @@ class TestFilterSelector(unittest.TestCase):
             )
         else:
             return FilterSelector(
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

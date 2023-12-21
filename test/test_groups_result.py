@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.groups_result import GroupsResult  # noqa: E501
+from qdrant_openapi.models.groups_result import GroupsResult  # noqa: E501
 
 class TestGroupsResult(unittest.TestCase):
     """GroupsResult unit test stubs"""
@@ -38,9 +38,9 @@ class TestGroupsResult(unittest.TestCase):
         if include_optional:
             return GroupsResult(
                 groups = [
-                    openapi_client.models.point_group.PointGroup(
+                    qdrant_openapi.models.point_group.PointGroup(
                         hits = [
-                            openapi_client.models.scored_point.ScoredPoint(
+                            qdrant_openapi.models.scored_point.ScoredPoint(
                                 id = null, 
                                 version = 0, 
                                 score = 1.337, 
@@ -49,16 +49,16 @@ class TestGroupsResult(unittest.TestCase):
                                 shard_key = null, )
                             ], 
                         id = null, 
-                        lookup = openapi_client.models.record.Record(
+                        lookup = qdrant_openapi.models.record.Record(
                             id = null, ), )
                     ]
             )
         else:
             return GroupsResult(
                 groups = [
-                    openapi_client.models.point_group.PointGroup(
+                    qdrant_openapi.models.point_group.PointGroup(
                         hits = [
-                            openapi_client.models.scored_point.ScoredPoint(
+                            qdrant_openapi.models.scored_point.ScoredPoint(
                                 id = null, 
                                 version = 0, 
                                 score = 1.337, 
@@ -67,7 +67,7 @@ class TestGroupsResult(unittest.TestCase):
                                 shard_key = null, )
                             ], 
                         id = null, 
-                        lookup = openapi_client.models.record.Record(
+                        lookup = qdrant_openapi.models.record.Record(
                             id = null, ), )
                     ],
         )

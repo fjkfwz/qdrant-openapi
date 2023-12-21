@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.sharding_method import ShardingMethod  # noqa: E501
+from qdrant_openapi.models.sharding_method import ShardingMethod  # noqa: E501
 
 class TestShardingMethod(unittest.TestCase):
     """ShardingMethod unit test stubs"""

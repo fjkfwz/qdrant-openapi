@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scalar_type import ScalarType  # noqa: E501
+from qdrant_openapi.models.scalar_type import ScalarType  # noqa: E501
 
 class TestScalarType(unittest.TestCase):
     """ScalarType unit test stubs"""

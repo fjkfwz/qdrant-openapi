@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.vector_index_searches_telemetry import VectorIndexSearchesTelemetry  # noqa: E501
+from qdrant_openapi.models.vector_index_searches_telemetry import VectorIndexSearchesTelemetry  # noqa: E501
 
 class TestVectorIndexSearchesTelemetry(unittest.TestCase):
     """VectorIndexSearchesTelemetry unit test stubs"""
@@ -38,63 +38,63 @@ class TestVectorIndexSearchesTelemetry(unittest.TestCase):
         if include_optional:
             return VectorIndexSearchesTelemetry(
                 index_name = '',
-                unfiltered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                unfiltered_hnsw = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_hnsw = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                unfiltered_sparse = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_sparse = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_small_cardinality = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_small_cardinality = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_large_cardinality = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_large_cardinality = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_exact = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_exact = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_sparse = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_sparse = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                unfiltered_exact = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_exact = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
@@ -104,63 +104,63 @@ class TestVectorIndexSearchesTelemetry(unittest.TestCase):
             )
         else:
             return VectorIndexSearchesTelemetry(
-                unfiltered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                unfiltered_hnsw = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_hnsw = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                unfiltered_sparse = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_sparse = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_small_cardinality = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_small_cardinality = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_large_cardinality = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_large_cardinality = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_exact = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_exact = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                filtered_sparse = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                filtered_sparse = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
                     min_duration_micros = 1.337, 
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                unfiltered_exact = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                unfiltered_exact = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 

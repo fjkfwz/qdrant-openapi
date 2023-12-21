@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.with_payload_interface import WithPayloadInterface  # noqa: E501
+from qdrant_openapi.models.with_payload_interface import WithPayloadInterface  # noqa: E501
 
 class TestWithPayloadInterface(unittest.TestCase):
     """WithPayloadInterface unit test stubs"""

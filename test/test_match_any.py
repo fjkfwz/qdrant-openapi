@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.match_any import MatchAny  # noqa: E501
+from qdrant_openapi.models.match_any import MatchAny  # noqa: E501
 
 class TestMatchAny(unittest.TestCase):
     """MatchAny unit test stubs"""

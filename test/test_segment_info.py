@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.segment_info import SegmentInfo  # noqa: E501
+from qdrant_openapi.models.segment_info import SegmentInfo  # noqa: E501
 
 class TestSegmentInfo(unittest.TestCase):
     """SegmentInfo unit test stubs"""
@@ -46,9 +46,9 @@ class TestSegmentInfo(unittest.TestCase):
                 disk_usage_bytes = 0,
                 is_appendable = True,
                 index_schema = {
-                    'key' : openapi_client.models.payload_index_info.PayloadIndexInfo(
+                    'key' : qdrant_openapi.models.payload_index_info.PayloadIndexInfo(
                         data_type = 'keyword', 
-                        params = openapi_client.models.text_index_params.TextIndexParams(
+                        params = qdrant_openapi.models.text_index_params.TextIndexParams(
                             type = 'text', 
                             tokenizer = 'prefix', 
                             min_token_len = 0, 
@@ -57,7 +57,7 @@ class TestSegmentInfo(unittest.TestCase):
                         points = 0, )
                     },
                 vector_data = {
-                    'key' : openapi_client.models.vector_data_info.VectorDataInfo(
+                    'key' : qdrant_openapi.models.vector_data_info.VectorDataInfo(
                         num_vectors = 0, 
                         num_indexed_vectors = 0, 
                         num_deleted_vectors = 0, )
@@ -74,9 +74,9 @@ class TestSegmentInfo(unittest.TestCase):
                 disk_usage_bytes = 0,
                 is_appendable = True,
                 index_schema = {
-                    'key' : openapi_client.models.payload_index_info.PayloadIndexInfo(
+                    'key' : qdrant_openapi.models.payload_index_info.PayloadIndexInfo(
                         data_type = 'keyword', 
-                        params = openapi_client.models.text_index_params.TextIndexParams(
+                        params = qdrant_openapi.models.text_index_params.TextIndexParams(
                             type = 'text', 
                             tokenizer = 'prefix', 
                             min_token_len = 0, 
@@ -85,7 +85,7 @@ class TestSegmentInfo(unittest.TestCase):
                         points = 0, )
                     },
                 vector_data = {
-                    'key' : openapi_client.models.vector_data_info.VectorDataInfo(
+                    'key' : qdrant_openapi.models.vector_data_info.VectorDataInfo(
                         num_vectors = 0, 
                         num_indexed_vectors = 0, 
                         num_deleted_vectors = 0, )

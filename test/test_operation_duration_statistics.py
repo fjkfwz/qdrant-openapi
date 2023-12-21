@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.operation_duration_statistics import OperationDurationStatistics  # noqa: E501
+from qdrant_openapi.models.operation_duration_statistics import OperationDurationStatistics  # noqa: E501
 
 class TestOperationDurationStatistics(unittest.TestCase):
     """OperationDurationStatistics unit test stubs"""

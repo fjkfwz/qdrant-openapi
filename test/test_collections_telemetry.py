@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collections_telemetry import CollectionsTelemetry  # noqa: E501
+from qdrant_openapi.models.collections_telemetry import CollectionsTelemetry  # noqa: E501
 
 class TestCollectionsTelemetry(unittest.TestCase):
     """CollectionsTelemetry unit test stubs"""

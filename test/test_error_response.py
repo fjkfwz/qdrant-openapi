@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.error_response import ErrorResponse  # noqa: E501
+from qdrant_openapi.models.error_response import ErrorResponse  # noqa: E501
 
 class TestErrorResponse(unittest.TestCase):
     """ErrorResponse unit test stubs"""
@@ -38,7 +38,7 @@ class TestErrorResponse(unittest.TestCase):
         if include_optional:
             return ErrorResponse(
                 time = 1.337,
-                status = openapi_client.models.error_response_status.ErrorResponse_status(
+                status = qdrant_openapi.models.error_response_status.ErrorResponse_status(
                     error = '', ),
                 result = None
             )

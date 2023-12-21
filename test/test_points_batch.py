@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.points_batch import PointsBatch  # noqa: E501
+from qdrant_openapi.models.points_batch import PointsBatch  # noqa: E501
 
 class TestPointsBatch(unittest.TestCase):
     """PointsBatch unit test stubs"""
@@ -37,7 +37,7 @@ class TestPointsBatch(unittest.TestCase):
         model = PointsBatch()  # noqa: E501
         if include_optional:
             return PointsBatch(
-                batch = openapi_client.models.batch.Batch(
+                batch = qdrant_openapi.models.batch.Batch(
                     ids = [
                         null
                         ], 
@@ -49,7 +49,7 @@ class TestPointsBatch(unittest.TestCase):
             )
         else:
             return PointsBatch(
-                batch = openapi_client.models.batch.Batch(
+                batch = qdrant_openapi.models.batch.Batch(
                     ids = [
                         null
                         ], 

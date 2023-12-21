@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.segment_config import SegmentConfig  # noqa: E501
+from qdrant_openapi.models.segment_config import SegmentConfig  # noqa: E501
 
 class TestSegmentConfig(unittest.TestCase):
     """SegmentConfig unit test stubs"""
@@ -38,7 +38,7 @@ class TestSegmentConfig(unittest.TestCase):
         if include_optional:
             return SegmentConfig(
                 vector_data = {
-                    'key' : openapi_client.models.vector_data_config.VectorDataConfig(
+                    'key' : qdrant_openapi.models.vector_data_config.VectorDataConfig(
                         size = 0, 
                         distance = 'Cosine', 
                         storage_type = null, 
@@ -46,8 +46,8 @@ class TestSegmentConfig(unittest.TestCase):
                         quantization_config = null, )
                     },
                 sparse_vector_data = {
-                    'key' : openapi_client.models.sparse_vector_data_config.SparseVectorDataConfig(
-                        index = openapi_client.models.sparse_index_config.SparseIndexConfig(
+                    'key' : qdrant_openapi.models.sparse_vector_data_config.SparseVectorDataConfig(
+                        index = qdrant_openapi.models.sparse_index_config.SparseIndexConfig(
                             full_scan_threshold = 0, 
                             index_type = null, ), )
                     },

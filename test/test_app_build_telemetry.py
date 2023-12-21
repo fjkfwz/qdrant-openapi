@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.app_build_telemetry import AppBuildTelemetry  # noqa: E501
+from qdrant_openapi.models.app_build_telemetry import AppBuildTelemetry  # noqa: E501
 
 class TestAppBuildTelemetry(unittest.TestCase):
     """AppBuildTelemetry unit test stubs"""
@@ -39,12 +39,12 @@ class TestAppBuildTelemetry(unittest.TestCase):
             return AppBuildTelemetry(
                 name = '',
                 version = '',
-                features = openapi_client.models.app_features_telemetry.AppFeaturesTelemetry(
+                features = qdrant_openapi.models.app_features_telemetry.AppFeaturesTelemetry(
                     debug = True, 
                     web_feature = True, 
                     service_debug_feature = True, 
                     recovery_mode = True, ),
-                system = openapi_client.models.running_environment_telemetry.RunningEnvironmentTelemetry(
+                system = qdrant_openapi.models.running_environment_telemetry.RunningEnvironmentTelemetry(
                     distribution = '', 
                     distribution_version = '', 
                     is_docker = True, 

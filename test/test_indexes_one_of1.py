@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.indexes_one_of1 import IndexesOneOf1  # noqa: E501
+from qdrant_openapi.models.indexes_one_of1 import IndexesOneOf1  # noqa: E501
 
 class TestIndexesOneOf1(unittest.TestCase):
     """IndexesOneOf1 unit test stubs"""
@@ -38,7 +38,7 @@ class TestIndexesOneOf1(unittest.TestCase):
         if include_optional:
             return IndexesOneOf1(
                 type = 'hnsw',
-                options = openapi_client.models.hnsw_config.HnswConfig(
+                options = qdrant_openapi.models.hnsw_config.HnswConfig(
                     m = 0, 
                     ef_construct = 4, 
                     full_scan_threshold = 0, 
@@ -49,7 +49,7 @@ class TestIndexesOneOf1(unittest.TestCase):
         else:
             return IndexesOneOf1(
                 type = 'hnsw',
-                options = openapi_client.models.hnsw_config.HnswConfig(
+                options = qdrant_openapi.models.hnsw_config.HnswConfig(
                     m = 0, 
                     ef_construct = 4, 
                     full_scan_threshold = 0, 

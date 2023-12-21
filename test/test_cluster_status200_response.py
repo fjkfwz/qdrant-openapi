@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.cluster_status200_response import ClusterStatus200Response  # noqa: E501
+from qdrant_openapi.models.cluster_status200_response import ClusterStatus200Response  # noqa: E501
 
 class TestClusterStatus200Response(unittest.TestCase):
     """ClusterStatus200Response unit test stubs"""

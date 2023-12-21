@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.any_variants import AnyVariants  # noqa: E501
+from qdrant_openapi.models.any_variants import AnyVariants  # noqa: E501
 
 class TestAnyVariants(unittest.TestCase):
     """AnyVariants unit test stubs"""

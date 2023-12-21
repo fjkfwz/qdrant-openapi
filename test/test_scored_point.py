@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scored_point import ScoredPoint  # noqa: E501
+from qdrant_openapi.models.scored_point import ScoredPoint  # noqa: E501
 
 class TestScoredPoint(unittest.TestCase):
     """ScoredPoint unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.lookup_location import LookupLocation  # noqa: E501
+from qdrant_openapi.models.lookup_location import LookupLocation  # noqa: E501
 
 class TestLookupLocation(unittest.TestCase):
     """LookupLocation unit test stubs"""

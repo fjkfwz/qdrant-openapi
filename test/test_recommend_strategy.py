@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.recommend_strategy import RecommendStrategy  # noqa: E501
+from qdrant_openapi.models.recommend_strategy import RecommendStrategy  # noqa: E501
 
 class TestRecommendStrategy(unittest.TestCase):
     """RecommendStrategy unit test stubs"""

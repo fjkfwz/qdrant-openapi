@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collection_params_diff import CollectionParamsDiff  # noqa: E501
+from qdrant_openapi.models.collection_params_diff import CollectionParamsDiff  # noqa: E501
 
 class TestCollectionParamsDiff(unittest.TestCase):
     """CollectionParamsDiff unit test stubs"""

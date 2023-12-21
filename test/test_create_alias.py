@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_alias import CreateAlias  # noqa: E501
+from qdrant_openapi.models.create_alias import CreateAlias  # noqa: E501
 
 class TestCreateAlias(unittest.TestCase):
     """CreateAlias unit test stubs"""

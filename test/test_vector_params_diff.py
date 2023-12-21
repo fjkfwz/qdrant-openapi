@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.vector_params_diff import VectorParamsDiff  # noqa: E501
+from qdrant_openapi.models.vector_params_diff import VectorParamsDiff  # noqa: E501
 
 class TestVectorParamsDiff(unittest.TestCase):
     """VectorParamsDiff unit test stubs"""
@@ -37,7 +37,7 @@ class TestVectorParamsDiff(unittest.TestCase):
         model = VectorParamsDiff()  # noqa: E501
         if include_optional:
             return VectorParamsDiff(
-                hnsw_config = openapi_client.models.hnsw_config_diff.HnswConfigDiff(
+                hnsw_config = qdrant_openapi.models.hnsw_config_diff.HnswConfigDiff(
                     m = 0, 
                     ef_construct = 4, 
                     full_scan_threshold = 10, 

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.quantization_config import QuantizationConfig  # noqa: E501
+from qdrant_openapi.models.quantization_config import QuantizationConfig  # noqa: E501
 
 class TestQuantizationConfig(unittest.TestCase):
     """QuantizationConfig unit test stubs"""
@@ -37,26 +37,26 @@ class TestQuantizationConfig(unittest.TestCase):
         model = QuantizationConfig()  # noqa: E501
         if include_optional:
             return QuantizationConfig(
-                scalar = openapi_client.models.scalar_quantization_config.ScalarQuantizationConfig(
+                scalar = qdrant_openapi.models.scalar_quantization_config.ScalarQuantizationConfig(
                     type = 'int8', 
                     quantile = 0.5, 
                     always_ram = True, ),
-                product = openapi_client.models.product_quantization_config.ProductQuantizationConfig(
+                product = qdrant_openapi.models.product_quantization_config.ProductQuantizationConfig(
                     compression = 'x4', 
                     always_ram = True, ),
-                binary = openapi_client.models.binary_quantization_config.BinaryQuantizationConfig(
+                binary = qdrant_openapi.models.binary_quantization_config.BinaryQuantizationConfig(
                     always_ram = True, )
             )
         else:
             return QuantizationConfig(
-                scalar = openapi_client.models.scalar_quantization_config.ScalarQuantizationConfig(
+                scalar = qdrant_openapi.models.scalar_quantization_config.ScalarQuantizationConfig(
                     type = 'int8', 
                     quantile = 0.5, 
                     always_ram = True, ),
-                product = openapi_client.models.product_quantization_config.ProductQuantizationConfig(
+                product = qdrant_openapi.models.product_quantization_config.ProductQuantizationConfig(
                     compression = 'x4', 
                     always_ram = True, ),
-                binary = openapi_client.models.binary_quantization_config.BinaryQuantizationConfig(
+                binary = qdrant_openapi.models.binary_quantization_config.BinaryQuantizationConfig(
                     always_ram = True, ),
         )
         """

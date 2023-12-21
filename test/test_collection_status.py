@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collection_status import CollectionStatus  # noqa: E501
+from qdrant_openapi.models.collection_status import CollectionStatus  # noqa: E501
 
 class TestCollectionStatus(unittest.TestCase):
     """CollectionStatus unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.p2p_config_telemetry import P2pConfigTelemetry  # noqa: E501
+from qdrant_openapi.models.p2p_config_telemetry import P2pConfigTelemetry  # noqa: E501
 
 class TestP2pConfigTelemetry(unittest.TestCase):
     """P2pConfigTelemetry unit test stubs"""

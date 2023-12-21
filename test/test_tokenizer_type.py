@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.tokenizer_type import TokenizerType  # noqa: E501
+from qdrant_openapi.models.tokenizer_type import TokenizerType  # noqa: E501
 
 class TestTokenizerType(unittest.TestCase):
     """TokenizerType unit test stubs"""

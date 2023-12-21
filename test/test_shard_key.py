@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.shard_key import ShardKey  # noqa: E501
+from qdrant_openapi.models.shard_key import ShardKey  # noqa: E501
 
 class TestShardKey(unittest.TestCase):
     """ShardKey unit test stubs"""

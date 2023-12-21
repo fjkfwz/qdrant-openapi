@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.condition import Condition  # noqa: E501
+from qdrant_openapi.models.condition import Condition  # noqa: E501
 
 class TestCondition(unittest.TestCase):
     """Condition unit test stubs"""
@@ -39,53 +39,53 @@ class TestCondition(unittest.TestCase):
             return Condition(
                 key = '',
                 match = None,
-                range = openapi_client.models.range.Range(
+                range = qdrant_openapi.models.range.Range(
                     lt = 1.337, 
                     gt = 1.337, 
                     gte = 1.337, 
                     lte = 1.337, ),
-                geo_bounding_box = openapi_client.models.geo_bounding_box.GeoBoundingBox(
-                    top_left = openapi_client.models.geo_point.GeoPoint(
+                geo_bounding_box = qdrant_openapi.models.geo_bounding_box.GeoBoundingBox(
+                    top_left = qdrant_openapi.models.geo_point.GeoPoint(
                         lon = 1.337, 
                         lat = 1.337, ), 
-                    bottom_right = openapi_client.models.geo_point.GeoPoint(
+                    bottom_right = qdrant_openapi.models.geo_point.GeoPoint(
                         lon = 1.337, 
                         lat = 1.337, ), ),
-                geo_radius = openapi_client.models.geo_radius.GeoRadius(
-                    center = openapi_client.models.geo_point.GeoPoint(
+                geo_radius = qdrant_openapi.models.geo_radius.GeoRadius(
+                    center = qdrant_openapi.models.geo_point.GeoPoint(
                         lon = 1.337, 
                         lat = 1.337, ), 
                     radius = 1.337, ),
-                geo_polygon = openapi_client.models.geo_polygon.GeoPolygon(
-                    exterior = openapi_client.models.geo_line_string.GeoLineString(
+                geo_polygon = qdrant_openapi.models.geo_polygon.GeoPolygon(
+                    exterior = qdrant_openapi.models.geo_line_string.GeoLineString(
                         points = [
-                            openapi_client.models.geo_point.GeoPoint(
+                            qdrant_openapi.models.geo_point.GeoPoint(
                                 lon = 1.337, 
                                 lat = 1.337, )
                             ], ), 
                     interiors = [
-                        openapi_client.models.geo_line_string.GeoLineString(
+                        qdrant_openapi.models.geo_line_string.GeoLineString(
                             points = [
-                                openapi_client.models.geo_point.GeoPoint(
+                                qdrant_openapi.models.geo_point.GeoPoint(
                                     lon = 1.337, 
                                     lat = 1.337, )
                                 ], )
                         ], ),
-                values_count = openapi_client.models.values_count.ValuesCount(
+                values_count = qdrant_openapi.models.values_count.ValuesCount(
                     lt = 0, 
                     gt = 0, 
                     gte = 0, 
                     lte = 0, ),
-                is_empty = openapi_client.models.payload_field.PayloadField(
+                is_empty = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', ),
-                is_null = openapi_client.models.payload_field.PayloadField(
+                is_null = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', ),
                 has_id = [
                     null
                     ],
-                nested = openapi_client.models.nested.Nested(
+                nested = qdrant_openapi.models.nested.Nested(
                     key = '', 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -108,16 +108,16 @@ class TestCondition(unittest.TestCase):
         else:
             return Condition(
                 key = '',
-                is_empty = openapi_client.models.payload_field.PayloadField(
+                is_empty = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', ),
-                is_null = openapi_client.models.payload_field.PayloadField(
+                is_null = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', ),
                 has_id = [
                     null
                     ],
-                nested = openapi_client.models.nested.Nested(
+                nested = qdrant_openapi.models.nested.Nested(
                     key = '', 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 

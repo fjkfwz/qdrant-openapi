@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.delete_operation import DeleteOperation  # noqa: E501
+from qdrant_openapi.models.delete_operation import DeleteOperation  # noqa: E501
 
 class TestDeleteOperation(unittest.TestCase):
     """DeleteOperation unit test stubs"""

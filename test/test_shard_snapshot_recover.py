@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.shard_snapshot_recover import ShardSnapshotRecover  # noqa: E501
+from qdrant_openapi.models.shard_snapshot_recover import ShardSnapshotRecover  # noqa: E501
 
 class TestShardSnapshotRecover(unittest.TestCase):
     """ShardSnapshotRecover unit test stubs"""

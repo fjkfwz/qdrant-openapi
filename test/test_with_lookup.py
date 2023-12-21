@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.with_lookup import WithLookup  # noqa: E501
+from qdrant_openapi.models.with_lookup import WithLookup  # noqa: E501
 
 class TestWithLookup(unittest.TestCase):
     """WithLookup unit test stubs"""

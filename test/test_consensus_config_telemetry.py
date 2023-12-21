@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.consensus_config_telemetry import ConsensusConfigTelemetry  # noqa: E501
+from qdrant_openapi.models.consensus_config_telemetry import ConsensusConfigTelemetry  # noqa: E501
 
 class TestConsensusConfigTelemetry(unittest.TestCase):
     """ConsensusConfigTelemetry unit test stubs"""

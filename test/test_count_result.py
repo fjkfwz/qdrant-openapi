@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.count_result import CountResult  # noqa: E501
+from qdrant_openapi.models.count_result import CountResult  # noqa: E501
 
 class TestCountResult(unittest.TestCase):
     """CountResult unit test stubs"""

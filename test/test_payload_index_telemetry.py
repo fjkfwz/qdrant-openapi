@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.payload_index_telemetry import PayloadIndexTelemetry  # noqa: E501
+from qdrant_openapi.models.payload_index_telemetry import PayloadIndexTelemetry  # noqa: E501
 
 class TestPayloadIndexTelemetry(unittest.TestCase):
     """PayloadIndexTelemetry unit test stubs"""

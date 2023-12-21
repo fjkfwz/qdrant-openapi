@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.geo_radius import GeoRadius  # noqa: E501
+from qdrant_openapi.models.geo_radius import GeoRadius  # noqa: E501
 
 class TestGeoRadius(unittest.TestCase):
     """GeoRadius unit test stubs"""
@@ -37,14 +37,14 @@ class TestGeoRadius(unittest.TestCase):
         model = GeoRadius()  # noqa: E501
         if include_optional:
             return GeoRadius(
-                center = openapi_client.models.geo_point.GeoPoint(
+                center = qdrant_openapi.models.geo_point.GeoPoint(
                     lon = 1.337, 
                     lat = 1.337, ),
                 radius = 1.337
             )
         else:
             return GeoRadius(
-                center = openapi_client.models.geo_point.GeoPoint(
+                center = qdrant_openapi.models.geo_point.GeoPoint(
                     lon = 1.337, 
                     lat = 1.337, ),
                 radius = 1.337,

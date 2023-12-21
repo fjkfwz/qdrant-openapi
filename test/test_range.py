@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.range import Range  # noqa: E501
+from qdrant_openapi.models.range import Range  # noqa: E501
 
 class TestRange(unittest.TestCase):
     """Range unit test stubs"""

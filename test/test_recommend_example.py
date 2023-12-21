@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.recommend_example import RecommendExample  # noqa: E501
+from qdrant_openapi.models.recommend_example import RecommendExample  # noqa: E501
 
 class TestRecommendExample(unittest.TestCase):
     """RecommendExample unit test stubs"""

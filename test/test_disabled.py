@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.disabled import Disabled  # noqa: E501
+from qdrant_openapi.models.disabled import Disabled  # noqa: E501
 
 class TestDisabled(unittest.TestCase):
     """Disabled unit test stubs"""

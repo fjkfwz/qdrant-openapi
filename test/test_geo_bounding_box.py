@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.geo_bounding_box import GeoBoundingBox  # noqa: E501
+from qdrant_openapi.models.geo_bounding_box import GeoBoundingBox  # noqa: E501
 
 class TestGeoBoundingBox(unittest.TestCase):
     """GeoBoundingBox unit test stubs"""
@@ -37,19 +37,19 @@ class TestGeoBoundingBox(unittest.TestCase):
         model = GeoBoundingBox()  # noqa: E501
         if include_optional:
             return GeoBoundingBox(
-                top_left = openapi_client.models.geo_point.GeoPoint(
+                top_left = qdrant_openapi.models.geo_point.GeoPoint(
                     lon = 1.337, 
                     lat = 1.337, ),
-                bottom_right = openapi_client.models.geo_point.GeoPoint(
+                bottom_right = qdrant_openapi.models.geo_point.GeoPoint(
                     lon = 1.337, 
                     lat = 1.337, )
             )
         else:
             return GeoBoundingBox(
-                top_left = openapi_client.models.geo_point.GeoPoint(
+                top_left = qdrant_openapi.models.geo_point.GeoPoint(
                     lon = 1.337, 
                     lat = 1.337, ),
-                bottom_right = openapi_client.models.geo_point.GeoPoint(
+                bottom_right = qdrant_openapi.models.geo_point.GeoPoint(
                     lon = 1.337, 
                     lat = 1.337, ),
         )

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.point_group import PointGroup  # noqa: E501
+from qdrant_openapi.models.point_group import PointGroup  # noqa: E501
 
 class TestPointGroup(unittest.TestCase):
     """PointGroup unit test stubs"""
@@ -38,7 +38,7 @@ class TestPointGroup(unittest.TestCase):
         if include_optional:
             return PointGroup(
                 hits = [
-                    openapi_client.models.scored_point.ScoredPoint(
+                    qdrant_openapi.models.scored_point.ScoredPoint(
                         id = null, 
                         version = 0, 
                         score = 1.337, 
@@ -47,7 +47,7 @@ class TestPointGroup(unittest.TestCase):
                         shard_key = null, )
                     ],
                 id = None,
-                lookup = openapi_client.models.record.Record(
+                lookup = qdrant_openapi.models.record.Record(
                     id = null, 
                     payload = { }, 
                     vector = null, 
@@ -56,7 +56,7 @@ class TestPointGroup(unittest.TestCase):
         else:
             return PointGroup(
                 hits = [
-                    openapi_client.models.scored_point.ScoredPoint(
+                    qdrant_openapi.models.scored_point.ScoredPoint(
                         id = null, 
                         version = 0, 
                         score = 1.337, 

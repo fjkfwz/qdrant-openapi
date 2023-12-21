@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.running_environment_telemetry import RunningEnvironmentTelemetry  # noqa: E501
+from qdrant_openapi.models.running_environment_telemetry import RunningEnvironmentTelemetry  # noqa: E501
 
 class TestRunningEnvironmentTelemetry(unittest.TestCase):
     """RunningEnvironmentTelemetry unit test stubs"""

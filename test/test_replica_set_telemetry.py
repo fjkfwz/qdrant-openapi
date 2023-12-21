@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.replica_set_telemetry import ReplicaSetTelemetry  # noqa: E501
+from qdrant_openapi.models.replica_set_telemetry import ReplicaSetTelemetry  # noqa: E501
 
 class TestReplicaSetTelemetry(unittest.TestCase):
     """ReplicaSetTelemetry unit test stubs"""
@@ -38,11 +38,11 @@ class TestReplicaSetTelemetry(unittest.TestCase):
         if include_optional:
             return ReplicaSetTelemetry(
                 id = 0,
-                local = openapi_client.models.local_shard_telemetry.LocalShardTelemetry(
+                local = qdrant_openapi.models.local_shard_telemetry.LocalShardTelemetry(
                     variant_name = '', 
                     segments = [
-                        openapi_client.models.segment_telemetry.SegmentTelemetry(
-                            info = openapi_client.models.segment_info.SegmentInfo(
+                        qdrant_openapi.models.segment_telemetry.SegmentTelemetry(
+                            info = qdrant_openapi.models.segment_info.SegmentInfo(
                                 segment_type = 'plain', 
                                 num_vectors = 0, 
                                 num_points = 0, 
@@ -52,9 +52,9 @@ class TestReplicaSetTelemetry(unittest.TestCase):
                                 disk_usage_bytes = 0, 
                                 is_appendable = True, 
                                 index_schema = {
-                                    'key' : openapi_client.models.payload_index_info.PayloadIndexInfo(
+                                    'key' : qdrant_openapi.models.payload_index_info.PayloadIndexInfo(
                                         data_type = 'keyword', 
-                                        params = openapi_client.models.text_index_params.TextIndexParams(
+                                        params = qdrant_openapi.models.text_index_params.TextIndexParams(
                                             type = 'text', 
                                             tokenizer = 'prefix', 
                                             min_token_len = 0, 
@@ -63,30 +63,30 @@ class TestReplicaSetTelemetry(unittest.TestCase):
                                         points = 0, )
                                     }, 
                                 vector_data = {
-                                    'key' : openapi_client.models.vector_data_info.VectorDataInfo(
+                                    'key' : qdrant_openapi.models.vector_data_info.VectorDataInfo(
                                         num_vectors = 0, 
                                         num_indexed_vectors = 0, 
                                         num_deleted_vectors = 0, )
                                     }, ), 
-                            config = openapi_client.models.segment_config.SegmentConfig(
+                            config = qdrant_openapi.models.segment_config.SegmentConfig(
                                 sparse_vector_data = {
-                                    'key' : openapi_client.models.sparse_vector_data_config.SparseVectorDataConfig(
-                                        index = openapi_client.models.sparse_index_config.SparseIndexConfig(
+                                    'key' : qdrant_openapi.models.sparse_vector_data_config.SparseVectorDataConfig(
+                                        index = qdrant_openapi.models.sparse_index_config.SparseIndexConfig(
                                             full_scan_threshold = 0, 
                                             index_type = null, ), )
                                     }, 
                                 payload_storage_type = null, ), 
                             vector_index_searches = [
-                                openapi_client.models.vector_index_searches_telemetry.VectorIndexSearchesTelemetry(
+                                qdrant_openapi.models.vector_index_searches_telemetry.VectorIndexSearchesTelemetry(
                                     index_name = '', 
-                                    unfiltered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                    unfiltered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                         count = 0, 
                                         fail_count = 0, 
                                         avg_duration_micros = 1.337, 
                                         min_duration_micros = 1.337, 
                                         max_duration_micros = 1.337, 
                                         last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ), 
-                                    unfiltered_hnsw = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                    unfiltered_hnsw = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                         count = 0, 
                                         fail_count = 0, 
                                         avg_duration_micros = 1.337, 
@@ -102,18 +102,18 @@ class TestReplicaSetTelemetry(unittest.TestCase):
                                     unfiltered_exact = , )
                                 ], 
                             payload_field_indices = [
-                                openapi_client.models.payload_index_telemetry.PayloadIndexTelemetry(
+                                qdrant_openapi.models.payload_index_telemetry.PayloadIndexTelemetry(
                                     field_name = '', 
                                     points_values_count = 0, 
                                     points_count = 0, 
                                     histogram_bucket_size = 0, )
                                 ], )
                         ], 
-                    optimizations = openapi_client.models.optimizer_telemetry.OptimizerTelemetry(
+                    optimizations = qdrant_openapi.models.optimizer_telemetry.OptimizerTelemetry(
                         status = null, 
                         optimizations = , 
                         log = [
-                            openapi_client.models.tracker_telemetry.TrackerTelemetry(
+                            qdrant_openapi.models.tracker_telemetry.TrackerTelemetry(
                                 name = '', 
                                 segment_ids = [
                                     0
@@ -123,17 +123,17 @@ class TestReplicaSetTelemetry(unittest.TestCase):
                                 end_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                             ], ), ),
                 remote = [
-                    openapi_client.models.remote_shard_telemetry.RemoteShardTelemetry(
+                    qdrant_openapi.models.remote_shard_telemetry.RemoteShardTelemetry(
                         shard_id = 0, 
                         peer_id = 0, 
-                        searches = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        searches = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 
                             min_duration_micros = 1.337, 
                             max_duration_micros = 1.337, 
                             last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ), 
-                        updates = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        updates = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 
@@ -149,17 +149,17 @@ class TestReplicaSetTelemetry(unittest.TestCase):
             return ReplicaSetTelemetry(
                 id = 0,
                 remote = [
-                    openapi_client.models.remote_shard_telemetry.RemoteShardTelemetry(
+                    qdrant_openapi.models.remote_shard_telemetry.RemoteShardTelemetry(
                         shard_id = 0, 
                         peer_id = 0, 
-                        searches = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        searches = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 
                             min_duration_micros = 1.337, 
                             max_duration_micros = 1.337, 
                             last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ), 
-                        updates = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        updates = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 

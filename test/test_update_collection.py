@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.update_collection import UpdateCollection  # noqa: E501
+from qdrant_openapi.models.update_collection import UpdateCollection  # noqa: E501
 
 class TestUpdateCollection(unittest.TestCase):
     """UpdateCollection unit test stubs"""
@@ -38,8 +38,8 @@ class TestUpdateCollection(unittest.TestCase):
         if include_optional:
             return UpdateCollection(
                 vectors = {
-                    'key' : openapi_client.models.vector_params_diff.VectorParamsDiff(
-                        hnsw_config = openapi_client.models.hnsw_config_diff.HnswConfigDiff(
+                    'key' : qdrant_openapi.models.vector_params_diff.VectorParamsDiff(
+                        hnsw_config = qdrant_openapi.models.hnsw_config_diff.HnswConfigDiff(
                             m = 0, 
                             ef_construct = 4, 
                             full_scan_threshold = 10, 
@@ -49,7 +49,7 @@ class TestUpdateCollection(unittest.TestCase):
                         quantization_config = null, 
                         on_disk = True, )
                     },
-                optimizers_config = openapi_client.models.optimizers_config_diff.OptimizersConfigDiff(
+                optimizers_config = qdrant_openapi.models.optimizers_config_diff.OptimizersConfigDiff(
                     deleted_threshold = 1.337, 
                     vacuum_min_vector_number = 0, 
                     default_segment_number = 0, 
@@ -58,12 +58,12 @@ class TestUpdateCollection(unittest.TestCase):
                     indexing_threshold = 0, 
                     flush_interval_sec = 0, 
                     max_optimization_threads = 0, ),
-                params = openapi_client.models.collection_params_diff.CollectionParamsDiff(
+                params = qdrant_openapi.models.collection_params_diff.CollectionParamsDiff(
                     replication_factor = 1, 
                     write_consistency_factor = 1, 
                     read_fan_out_factor = 0, 
                     on_disk_payload = True, ),
-                hnsw_config = openapi_client.models.hnsw_config_diff.HnswConfigDiff(
+                hnsw_config = qdrant_openapi.models.hnsw_config_diff.HnswConfigDiff(
                     m = 0, 
                     ef_construct = 4, 
                     full_scan_threshold = 10, 
@@ -72,8 +72,8 @@ class TestUpdateCollection(unittest.TestCase):
                     payload_m = 0, ),
                 quantization_config = None,
                 sparse_vectors = {
-                    'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                        index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                    'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                        index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                             full_scan_threshold = 0, 
                             on_disk = True, ), )
                     }

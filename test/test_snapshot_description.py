@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.snapshot_description import SnapshotDescription  # noqa: E501
+from qdrant_openapi.models.snapshot_description import SnapshotDescription  # noqa: E501
 
 class TestSnapshotDescription(unittest.TestCase):
     """SnapshotDescription unit test stubs"""

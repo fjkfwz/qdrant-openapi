@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.tracker_status_one_of1 import TrackerStatusOneOf1  # noqa: E501
+from qdrant_openapi.models.tracker_status_one_of1 import TrackerStatusOneOf1  # noqa: E501
 
 class TestTrackerStatusOneOf1(unittest.TestCase):
     """TrackerStatusOneOf1 unit test stubs"""

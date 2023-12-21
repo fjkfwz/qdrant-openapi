@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.delete_payload_operation import DeletePayloadOperation  # noqa: E501
+from qdrant_openapi.models.delete_payload_operation import DeletePayloadOperation  # noqa: E501
 
 class TestDeletePayloadOperation(unittest.TestCase):
     """DeletePayloadOperation unit test stubs"""
@@ -37,14 +37,14 @@ class TestDeletePayloadOperation(unittest.TestCase):
         model = DeletePayloadOperation()  # noqa: E501
         if include_optional:
             return DeletePayloadOperation(
-                delete_payload = openapi_client.models.delete_payload.DeletePayload(
+                delete_payload = qdrant_openapi.models.delete_payload.DeletePayload(
                     keys = [
                         ''
                         ], 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -58,14 +58,14 @@ class TestDeletePayloadOperation(unittest.TestCase):
             )
         else:
             return DeletePayloadOperation(
-                delete_payload = openapi_client.models.delete_payload.DeletePayload(
+                delete_payload = qdrant_openapi.models.delete_payload.DeletePayload(
                     keys = [
                         ''
                         ], 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 

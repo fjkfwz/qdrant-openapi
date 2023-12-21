@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.search_request_batch import SearchRequestBatch  # noqa: E501
+from qdrant_openapi.models.search_request_batch import SearchRequestBatch  # noqa: E501
 
 class TestSearchRequestBatch(unittest.TestCase):
     """SearchRequestBatch unit test stubs"""
@@ -38,10 +38,10 @@ class TestSearchRequestBatch(unittest.TestCase):
         if include_optional:
             return SearchRequestBatch(
                 searches = [
-                    openapi_client.models.search_request.SearchRequest(
+                    qdrant_openapi.models.search_request.SearchRequest(
                         shard_key = null, 
                         vector = null, 
-                        filter = openapi_client.models.filter.Filter(
+                        filter = qdrant_openapi.models.filter.Filter(
                             should = [
                                 null
                                 ], 
@@ -51,10 +51,10 @@ class TestSearchRequestBatch(unittest.TestCase):
                             must_not = [
                                 null
                                 ], ), 
-                        params = openapi_client.models.search_params.SearchParams(
+                        params = qdrant_openapi.models.search_params.SearchParams(
                             hnsw_ef = 0, 
                             exact = True, 
-                            quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                            quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                                 ignore = True, 
                                 rescore = True, 
                                 oversampling = 1, ), 
@@ -69,10 +69,10 @@ class TestSearchRequestBatch(unittest.TestCase):
         else:
             return SearchRequestBatch(
                 searches = [
-                    openapi_client.models.search_request.SearchRequest(
+                    qdrant_openapi.models.search_request.SearchRequest(
                         shard_key = null, 
                         vector = null, 
-                        filter = openapi_client.models.filter.Filter(
+                        filter = qdrant_openapi.models.filter.Filter(
                             should = [
                                 null
                                 ], 
@@ -82,10 +82,10 @@ class TestSearchRequestBatch(unittest.TestCase):
                             must_not = [
                                 null
                                 ], ), 
-                        params = openapi_client.models.search_params.SearchParams(
+                        params = qdrant_openapi.models.search_params.SearchParams(
                             hnsw_ef = 0, 
                             exact = True, 
-                            quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                            quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                                 ignore = True, 
                                 rescore = True, 
                                 oversampling = 1, ), 

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_collection import CreateCollection  # noqa: E501
+from qdrant_openapi.models.create_collection import CreateCollection  # noqa: E501
 
 class TestCreateCollection(unittest.TestCase):
     """CreateCollection unit test stubs"""
@@ -43,17 +43,17 @@ class TestCreateCollection(unittest.TestCase):
                 replication_factor = 1,
                 write_consistency_factor = 1,
                 on_disk_payload = True,
-                hnsw_config = openapi_client.models.hnsw_config_diff.HnswConfigDiff(
+                hnsw_config = qdrant_openapi.models.hnsw_config_diff.HnswConfigDiff(
                     m = 0, 
                     ef_construct = 4, 
                     full_scan_threshold = 10, 
                     max_indexing_threads = 0, 
                     on_disk = True, 
                     payload_m = 0, ),
-                wal_config = openapi_client.models.wal_config_diff.WalConfigDiff(
+                wal_config = qdrant_openapi.models.wal_config_diff.WalConfigDiff(
                     wal_capacity_mb = 1, 
                     wal_segments_ahead = 0, ),
-                optimizers_config = openapi_client.models.optimizers_config_diff.OptimizersConfigDiff(
+                optimizers_config = qdrant_openapi.models.optimizers_config_diff.OptimizersConfigDiff(
                     deleted_threshold = 1.337, 
                     vacuum_min_vector_number = 0, 
                     default_segment_number = 0, 
@@ -62,12 +62,12 @@ class TestCreateCollection(unittest.TestCase):
                     indexing_threshold = 0, 
                     flush_interval_sec = 0, 
                     max_optimization_threads = 0, ),
-                init_from = openapi_client.models.init_from.InitFrom(
+                init_from = qdrant_openapi.models.init_from.InitFrom(
                     collection = '', ),
                 quantization_config = None,
                 sparse_vectors = {
-                    'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                        index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                    'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                        index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                             full_scan_threshold = 0, 
                             on_disk = True, ), )
                     }

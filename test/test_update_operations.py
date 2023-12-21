@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.update_operations import UpdateOperations  # noqa: E501
+from qdrant_openapi.models.update_operations import UpdateOperations  # noqa: E501
 
 class TestUpdateOperations(unittest.TestCase):
     """UpdateOperations unit test stubs"""

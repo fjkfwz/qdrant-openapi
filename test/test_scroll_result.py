@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scroll_result import ScrollResult  # noqa: E501
+from qdrant_openapi.models.scroll_result import ScrollResult  # noqa: E501
 
 class TestScrollResult(unittest.TestCase):
     """ScrollResult unit test stubs"""
@@ -38,7 +38,7 @@ class TestScrollResult(unittest.TestCase):
         if include_optional:
             return ScrollResult(
                 points = [
-                    openapi_client.models.record.Record(
+                    qdrant_openapi.models.record.Record(
                         id = null, 
                         payload = { }, 
                         vector = null, 
@@ -49,7 +49,7 @@ class TestScrollResult(unittest.TestCase):
         else:
             return ScrollResult(
                 points = [
-                    openapi_client.models.record.Record(
+                    qdrant_openapi.models.record.Record(
                         id = null, 
                         payload = { }, 
                         vector = null, 

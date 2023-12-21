@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.change_aliases_operation import ChangeAliasesOperation  # noqa: E501
+from qdrant_openapi.models.change_aliases_operation import ChangeAliasesOperation  # noqa: E501
 
 class TestChangeAliasesOperation(unittest.TestCase):
     """ChangeAliasesOperation unit test stubs"""

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.service_api import ServiceApi  # noqa: E501
+from qdrant_openapi.api.service_api import ServiceApi  # noqa: E501
 
 
 class TestServiceApi(unittest.TestCase):

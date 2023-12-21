@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.set_payload_operation import SetPayloadOperation  # noqa: E501
+from qdrant_openapi.models.set_payload_operation import SetPayloadOperation  # noqa: E501
 
 class TestSetPayloadOperation(unittest.TestCase):
     """SetPayloadOperation unit test stubs"""
@@ -37,12 +37,12 @@ class TestSetPayloadOperation(unittest.TestCase):
         model = SetPayloadOperation()  # noqa: E501
         if include_optional:
             return SetPayloadOperation(
-                set_payload = openapi_client.models.set_payload.SetPayload(
+                set_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -56,12 +56,12 @@ class TestSetPayloadOperation(unittest.TestCase):
             )
         else:
             return SetPayloadOperation(
-                set_payload = openapi_client.models.set_payload.SetPayload(
+                set_payload = qdrant_openapi.models.set_payload.SetPayload(
                     payload = { }, 
                     points = [
                         null
                         ], 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 

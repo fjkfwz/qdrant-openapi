@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.snapshots_api import SnapshotsApi  # noqa: E501
+from qdrant_openapi.api.snapshots_api import SnapshotsApi  # noqa: E501
 
 
 class TestSnapshotsApi(unittest.TestCase):

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.drop_sharding_key import DropShardingKey  # noqa: E501
+from qdrant_openapi.models.drop_sharding_key import DropShardingKey  # noqa: E501
 
 class TestDropShardingKey(unittest.TestCase):
     """DropShardingKey unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.abort_transfer_operation import AbortTransferOperation  # noqa: E501
+from qdrant_openapi.models.abort_transfer_operation import AbortTransferOperation  # noqa: E501
 
 class TestAbortTransferOperation(unittest.TestCase):
     """AbortTransferOperation unit test stubs"""
@@ -37,7 +37,7 @@ class TestAbortTransferOperation(unittest.TestCase):
         model = AbortTransferOperation()  # noqa: E501
         if include_optional:
             return AbortTransferOperation(
-                abort_transfer = openapi_client.models.move_shard.MoveShard(
+                abort_transfer = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
@@ -45,7 +45,7 @@ class TestAbortTransferOperation(unittest.TestCase):
             )
         else:
             return AbortTransferOperation(
-                abort_transfer = openapi_client.models.move_shard.MoveShard(
+                abort_transfer = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 

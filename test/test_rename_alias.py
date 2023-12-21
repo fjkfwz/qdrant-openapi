@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.rename_alias import RenameAlias  # noqa: E501
+from qdrant_openapi.models.rename_alias import RenameAlias  # noqa: E501
 
 class TestRenameAlias(unittest.TestCase):
     """RenameAlias unit test stubs"""

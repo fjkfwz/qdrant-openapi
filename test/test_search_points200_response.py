@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.search_points200_response import SearchPoints200Response  # noqa: E501
+from qdrant_openapi.models.search_points200_response import SearchPoints200Response  # noqa: E501
 
 class TestSearchPoints200Response(unittest.TestCase):
     """SearchPoints200Response unit test stubs"""
@@ -40,7 +40,7 @@ class TestSearchPoints200Response(unittest.TestCase):
                 time = 1.337,
                 status = '',
                 result = [
-                    openapi_client.models.scored_point.ScoredPoint(
+                    qdrant_openapi.models.scored_point.ScoredPoint(
                         id = null, 
                         version = 0, 
                         score = 1.337, 

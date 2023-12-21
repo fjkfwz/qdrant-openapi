@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.batch_vector_struct import BatchVectorStruct  # noqa: E501
+from qdrant_openapi.models.batch_vector_struct import BatchVectorStruct  # noqa: E501
 
 class TestBatchVectorStruct(unittest.TestCase):
     """BatchVectorStruct unit test stubs"""

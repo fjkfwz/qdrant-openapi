@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.collection_telemetry_enum import CollectionTelemetryEnum  # noqa: E501
+from qdrant_openapi.models.collection_telemetry_enum import CollectionTelemetryEnum  # noqa: E501
 
 class TestCollectionTelemetryEnum(unittest.TestCase):
     """CollectionTelemetryEnum unit test stubs"""
@@ -39,8 +39,8 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
             return CollectionTelemetryEnum(
                 id = '',
                 init_time_ms = 0,
-                config = openapi_client.models.collection_config.CollectionConfig(
-                    params = openapi_client.models.collection_params.CollectionParams(
+                config = qdrant_openapi.models.collection_config.CollectionConfig(
+                    params = qdrant_openapi.models.collection_params.CollectionParams(
                         vectors = null, 
                         shard_number = 1, 
                         sharding_method = 'auto', 
@@ -49,19 +49,19 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                         read_fan_out_factor = 0, 
                         on_disk_payload = True, 
                         sparse_vectors = {
-                            'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                                index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                            'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                                index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                     full_scan_threshold = 0, 
                                     on_disk = True, ), )
                             }, ), 
-                    hnsw_config = openapi_client.models.hnsw_config.HnswConfig(
+                    hnsw_config = qdrant_openapi.models.hnsw_config.HnswConfig(
                         m = 0, 
                         ef_construct = 4, 
                         full_scan_threshold = 0, 
                         max_indexing_threads = 0, 
                         on_disk = True, 
                         payload_m = 0, ), 
-                    optimizer_config = openapi_client.models.optimizers_config.OptimizersConfig(
+                    optimizer_config = qdrant_openapi.models.optimizers_config.OptimizersConfig(
                         deleted_threshold = 0, 
                         vacuum_min_vector_number = 100, 
                         default_segment_number = 0, 
@@ -70,18 +70,18 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                         indexing_threshold = 0, 
                         flush_interval_sec = 0, 
                         max_optimization_threads = 0, ), 
-                    wal_config = openapi_client.models.wal_config.WalConfig(
+                    wal_config = qdrant_openapi.models.wal_config.WalConfig(
                         wal_capacity_mb = 1, 
                         wal_segments_ahead = 0, ), 
                     quantization_config = null, ),
                 shards = [
-                    openapi_client.models.replica_set_telemetry.ReplicaSetTelemetry(
+                    qdrant_openapi.models.replica_set_telemetry.ReplicaSetTelemetry(
                         id = 0, 
-                        local = openapi_client.models.local_shard_telemetry.LocalShardTelemetry(
+                        local = qdrant_openapi.models.local_shard_telemetry.LocalShardTelemetry(
                             variant_name = '', 
                             segments = [
-                                openapi_client.models.segment_telemetry.SegmentTelemetry(
-                                    info = openapi_client.models.segment_info.SegmentInfo(
+                                qdrant_openapi.models.segment_telemetry.SegmentTelemetry(
+                                    info = qdrant_openapi.models.segment_info.SegmentInfo(
                                         segment_type = 'plain', 
                                         num_vectors = 0, 
                                         num_points = 0, 
@@ -91,9 +91,9 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                         disk_usage_bytes = 0, 
                                         is_appendable = True, 
                                         index_schema = {
-                                            'key' : openapi_client.models.payload_index_info.PayloadIndexInfo(
+                                            'key' : qdrant_openapi.models.payload_index_info.PayloadIndexInfo(
                                                 data_type = 'keyword', 
-                                                params = openapi_client.models.text_index_params.TextIndexParams(
+                                                params = qdrant_openapi.models.text_index_params.TextIndexParams(
                                                     type = 'text', 
                                                     tokenizer = 'prefix', 
                                                     min_token_len = 0, 
@@ -102,30 +102,30 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                                 points = 0, )
                                             }, 
                                         vector_data = {
-                                            'key' : openapi_client.models.vector_data_info.VectorDataInfo(
+                                            'key' : qdrant_openapi.models.vector_data_info.VectorDataInfo(
                                                 num_vectors = 0, 
                                                 num_indexed_vectors = 0, 
                                                 num_deleted_vectors = 0, )
                                             }, ), 
-                                    config = openapi_client.models.segment_config.SegmentConfig(
+                                    config = qdrant_openapi.models.segment_config.SegmentConfig(
                                         sparse_vector_data = {
-                                            'key' : openapi_client.models.sparse_vector_data_config.SparseVectorDataConfig(
-                                                index = openapi_client.models.sparse_index_config.SparseIndexConfig(
+                                            'key' : qdrant_openapi.models.sparse_vector_data_config.SparseVectorDataConfig(
+                                                index = qdrant_openapi.models.sparse_index_config.SparseIndexConfig(
                                                     full_scan_threshold = 0, 
                                                     index_type = null, ), )
                                             }, 
                                         payload_storage_type = null, ), 
                                     vector_index_searches = [
-                                        openapi_client.models.vector_index_searches_telemetry.VectorIndexSearchesTelemetry(
+                                        qdrant_openapi.models.vector_index_searches_telemetry.VectorIndexSearchesTelemetry(
                                             index_name = '', 
-                                            unfiltered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                            unfiltered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                                 count = 0, 
                                                 fail_count = 0, 
                                                 avg_duration_micros = 1.337, 
                                                 min_duration_micros = 1.337, 
                                                 max_duration_micros = 1.337, 
                                                 last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ), 
-                                            unfiltered_hnsw = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                            unfiltered_hnsw = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                                 count = 0, 
                                                 fail_count = 0, 
                                                 avg_duration_micros = 1.337, 
@@ -141,18 +141,18 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                             unfiltered_exact = , )
                                         ], 
                                     payload_field_indices = [
-                                        openapi_client.models.payload_index_telemetry.PayloadIndexTelemetry(
+                                        qdrant_openapi.models.payload_index_telemetry.PayloadIndexTelemetry(
                                             field_name = '', 
                                             points_values_count = 0, 
                                             points_count = 0, 
                                             histogram_bucket_size = 0, )
                                         ], )
                                 ], 
-                            optimizations = openapi_client.models.optimizer_telemetry.OptimizerTelemetry(
+                            optimizations = qdrant_openapi.models.optimizer_telemetry.OptimizerTelemetry(
                                 status = null, 
                                 optimizations = , 
                                 log = [
-                                    openapi_client.models.tracker_telemetry.TrackerTelemetry(
+                                    qdrant_openapi.models.tracker_telemetry.TrackerTelemetry(
                                         name = '', 
                                         segment_ids = [
                                             0
@@ -162,7 +162,7 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                         end_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                                     ], ), ), 
                         remote = [
-                            openapi_client.models.remote_shard_telemetry.RemoteShardTelemetry(
+                            qdrant_openapi.models.remote_shard_telemetry.RemoteShardTelemetry(
                                 shard_id = 0, 
                                 peer_id = 0, 
                                 searches = , 
@@ -173,7 +173,7 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                             }, )
                     ],
                 transfers = [
-                    openapi_client.models.shard_transfer_info.ShardTransferInfo(
+                    qdrant_openapi.models.shard_transfer_info.ShardTransferInfo(
                         shard_id = 0, 
                         from = 0, 
                         to = 0, 
@@ -182,7 +182,7 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                     ],
                 vectors = 0,
                 optimizers_status = None,
-                params = openapi_client.models.collection_params.CollectionParams(
+                params = qdrant_openapi.models.collection_params.CollectionParams(
                     vectors = null, 
                     shard_number = 1, 
                     sharding_method = 'auto', 
@@ -191,8 +191,8 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                     read_fan_out_factor = 0, 
                     on_disk_payload = True, 
                     sparse_vectors = {
-                        'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                            index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                        'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                            index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                 full_scan_threshold = 0, 
                                 on_disk = True, ), )
                         }, )
@@ -201,8 +201,8 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
             return CollectionTelemetryEnum(
                 id = '',
                 init_time_ms = 0,
-                config = openapi_client.models.collection_config.CollectionConfig(
-                    params = openapi_client.models.collection_params.CollectionParams(
+                config = qdrant_openapi.models.collection_config.CollectionConfig(
+                    params = qdrant_openapi.models.collection_params.CollectionParams(
                         vectors = null, 
                         shard_number = 1, 
                         sharding_method = 'auto', 
@@ -211,19 +211,19 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                         read_fan_out_factor = 0, 
                         on_disk_payload = True, 
                         sparse_vectors = {
-                            'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                                index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                            'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                                index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                     full_scan_threshold = 0, 
                                     on_disk = True, ), )
                             }, ), 
-                    hnsw_config = openapi_client.models.hnsw_config.HnswConfig(
+                    hnsw_config = qdrant_openapi.models.hnsw_config.HnswConfig(
                         m = 0, 
                         ef_construct = 4, 
                         full_scan_threshold = 0, 
                         max_indexing_threads = 0, 
                         on_disk = True, 
                         payload_m = 0, ), 
-                    optimizer_config = openapi_client.models.optimizers_config.OptimizersConfig(
+                    optimizer_config = qdrant_openapi.models.optimizers_config.OptimizersConfig(
                         deleted_threshold = 0, 
                         vacuum_min_vector_number = 100, 
                         default_segment_number = 0, 
@@ -232,18 +232,18 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                         indexing_threshold = 0, 
                         flush_interval_sec = 0, 
                         max_optimization_threads = 0, ), 
-                    wal_config = openapi_client.models.wal_config.WalConfig(
+                    wal_config = qdrant_openapi.models.wal_config.WalConfig(
                         wal_capacity_mb = 1, 
                         wal_segments_ahead = 0, ), 
                     quantization_config = null, ),
                 shards = [
-                    openapi_client.models.replica_set_telemetry.ReplicaSetTelemetry(
+                    qdrant_openapi.models.replica_set_telemetry.ReplicaSetTelemetry(
                         id = 0, 
-                        local = openapi_client.models.local_shard_telemetry.LocalShardTelemetry(
+                        local = qdrant_openapi.models.local_shard_telemetry.LocalShardTelemetry(
                             variant_name = '', 
                             segments = [
-                                openapi_client.models.segment_telemetry.SegmentTelemetry(
-                                    info = openapi_client.models.segment_info.SegmentInfo(
+                                qdrant_openapi.models.segment_telemetry.SegmentTelemetry(
+                                    info = qdrant_openapi.models.segment_info.SegmentInfo(
                                         segment_type = 'plain', 
                                         num_vectors = 0, 
                                         num_points = 0, 
@@ -253,9 +253,9 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                         disk_usage_bytes = 0, 
                                         is_appendable = True, 
                                         index_schema = {
-                                            'key' : openapi_client.models.payload_index_info.PayloadIndexInfo(
+                                            'key' : qdrant_openapi.models.payload_index_info.PayloadIndexInfo(
                                                 data_type = 'keyword', 
-                                                params = openapi_client.models.text_index_params.TextIndexParams(
+                                                params = qdrant_openapi.models.text_index_params.TextIndexParams(
                                                     type = 'text', 
                                                     tokenizer = 'prefix', 
                                                     min_token_len = 0, 
@@ -264,30 +264,30 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                                 points = 0, )
                                             }, 
                                         vector_data = {
-                                            'key' : openapi_client.models.vector_data_info.VectorDataInfo(
+                                            'key' : qdrant_openapi.models.vector_data_info.VectorDataInfo(
                                                 num_vectors = 0, 
                                                 num_indexed_vectors = 0, 
                                                 num_deleted_vectors = 0, )
                                             }, ), 
-                                    config = openapi_client.models.segment_config.SegmentConfig(
+                                    config = qdrant_openapi.models.segment_config.SegmentConfig(
                                         sparse_vector_data = {
-                                            'key' : openapi_client.models.sparse_vector_data_config.SparseVectorDataConfig(
-                                                index = openapi_client.models.sparse_index_config.SparseIndexConfig(
+                                            'key' : qdrant_openapi.models.sparse_vector_data_config.SparseVectorDataConfig(
+                                                index = qdrant_openapi.models.sparse_index_config.SparseIndexConfig(
                                                     full_scan_threshold = 0, 
                                                     index_type = null, ), )
                                             }, 
                                         payload_storage_type = null, ), 
                                     vector_index_searches = [
-                                        openapi_client.models.vector_index_searches_telemetry.VectorIndexSearchesTelemetry(
+                                        qdrant_openapi.models.vector_index_searches_telemetry.VectorIndexSearchesTelemetry(
                                             index_name = '', 
-                                            unfiltered_plain = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                            unfiltered_plain = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                                 count = 0, 
                                                 fail_count = 0, 
                                                 avg_duration_micros = 1.337, 
                                                 min_duration_micros = 1.337, 
                                                 max_duration_micros = 1.337, 
                                                 last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ), 
-                                            unfiltered_hnsw = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                                            unfiltered_hnsw = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                                                 count = 0, 
                                                 fail_count = 0, 
                                                 avg_duration_micros = 1.337, 
@@ -303,18 +303,18 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                             unfiltered_exact = , )
                                         ], 
                                     payload_field_indices = [
-                                        openapi_client.models.payload_index_telemetry.PayloadIndexTelemetry(
+                                        qdrant_openapi.models.payload_index_telemetry.PayloadIndexTelemetry(
                                             field_name = '', 
                                             points_values_count = 0, 
                                             points_count = 0, 
                                             histogram_bucket_size = 0, )
                                         ], )
                                 ], 
-                            optimizations = openapi_client.models.optimizer_telemetry.OptimizerTelemetry(
+                            optimizations = qdrant_openapi.models.optimizer_telemetry.OptimizerTelemetry(
                                 status = null, 
                                 optimizations = , 
                                 log = [
-                                    openapi_client.models.tracker_telemetry.TrackerTelemetry(
+                                    qdrant_openapi.models.tracker_telemetry.TrackerTelemetry(
                                         name = '', 
                                         segment_ids = [
                                             0
@@ -324,7 +324,7 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                                         end_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                                     ], ), ), 
                         remote = [
-                            openapi_client.models.remote_shard_telemetry.RemoteShardTelemetry(
+                            qdrant_openapi.models.remote_shard_telemetry.RemoteShardTelemetry(
                                 shard_id = 0, 
                                 peer_id = 0, 
                                 searches = , 
@@ -335,7 +335,7 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                             }, )
                     ],
                 transfers = [
-                    openapi_client.models.shard_transfer_info.ShardTransferInfo(
+                    qdrant_openapi.models.shard_transfer_info.ShardTransferInfo(
                         shard_id = 0, 
                         from = 0, 
                         to = 0, 
@@ -344,7 +344,7 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                     ],
                 vectors = 0,
                 optimizers_status = None,
-                params = openapi_client.models.collection_params.CollectionParams(
+                params = qdrant_openapi.models.collection_params.CollectionParams(
                     vectors = null, 
                     shard_number = 1, 
                     sharding_method = 'auto', 
@@ -353,8 +353,8 @@ class TestCollectionTelemetryEnum(unittest.TestCase):
                     read_fan_out_factor = 0, 
                     on_disk_payload = True, 
                     sparse_vectors = {
-                        'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                            index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                        'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                            index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                 full_scan_threshold = 0, 
                                 on_disk = True, ), )
                         }, ),

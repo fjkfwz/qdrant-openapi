@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wal_config import WalConfig  # noqa: E501
+from qdrant_openapi.models.wal_config import WalConfig  # noqa: E501
 
 class TestWalConfig(unittest.TestCase):
     """WalConfig unit test stubs"""

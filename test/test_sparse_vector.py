@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.sparse_vector import SparseVector  # noqa: E501
+from qdrant_openapi.models.sparse_vector import SparseVector  # noqa: E501
 
 class TestSparseVector(unittest.TestCase):
     """SparseVector unit test stubs"""

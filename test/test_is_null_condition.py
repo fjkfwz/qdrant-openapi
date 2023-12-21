@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.is_null_condition import IsNullCondition  # noqa: E501
+from qdrant_openapi.models.is_null_condition import IsNullCondition  # noqa: E501
 
 class TestIsNullCondition(unittest.TestCase):
     """IsNullCondition unit test stubs"""
@@ -37,12 +37,12 @@ class TestIsNullCondition(unittest.TestCase):
         model = IsNullCondition()  # noqa: E501
         if include_optional:
             return IsNullCondition(
-                is_null = openapi_client.models.payload_field.PayloadField(
+                is_null = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', )
             )
         else:
             return IsNullCondition(
-                is_null = openapi_client.models.payload_field.PayloadField(
+                is_null = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', ),
         )
         """

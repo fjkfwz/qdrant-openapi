@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_collection200_response import GetCollection200Response  # noqa: E501
+from qdrant_openapi.models.get_collection200_response import GetCollection200Response  # noqa: E501
 
 class TestGetCollection200Response(unittest.TestCase):
     """GetCollection200Response unit test stubs"""
@@ -39,15 +39,15 @@ class TestGetCollection200Response(unittest.TestCase):
             return GetCollection200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.collection_info.CollectionInfo(
+                result = qdrant_openapi.models.collection_info.CollectionInfo(
                     status = 'green', 
                     optimizer_status = null, 
                     vectors_count = 0, 
                     indexed_vectors_count = 0, 
                     points_count = 0, 
                     segments_count = 0, 
-                    config = openapi_client.models.collection_config.CollectionConfig(
-                        params = openapi_client.models.collection_params.CollectionParams(
+                    config = qdrant_openapi.models.collection_config.CollectionConfig(
+                        params = qdrant_openapi.models.collection_params.CollectionParams(
                             vectors = null, 
                             shard_number = 1, 
                             sharding_method = 'auto', 
@@ -56,19 +56,19 @@ class TestGetCollection200Response(unittest.TestCase):
                             read_fan_out_factor = 0, 
                             on_disk_payload = True, 
                             sparse_vectors = {
-                                'key' : openapi_client.models.sparse_vector_params.SparseVectorParams(
-                                    index = openapi_client.models.sparse_index_params.SparseIndexParams(
+                                'key' : qdrant_openapi.models.sparse_vector_params.SparseVectorParams(
+                                    index = qdrant_openapi.models.sparse_index_params.SparseIndexParams(
                                         full_scan_threshold = 0, 
                                         on_disk = True, ), )
                                 }, ), 
-                        hnsw_config = openapi_client.models.hnsw_config.HnswConfig(
+                        hnsw_config = qdrant_openapi.models.hnsw_config.HnswConfig(
                             m = 0, 
                             ef_construct = 4, 
                             full_scan_threshold = 0, 
                             max_indexing_threads = 0, 
                             on_disk = True, 
                             payload_m = 0, ), 
-                        optimizer_config = openapi_client.models.optimizers_config.OptimizersConfig(
+                        optimizer_config = qdrant_openapi.models.optimizers_config.OptimizersConfig(
                             deleted_threshold = 0, 
                             vacuum_min_vector_number = 100, 
                             default_segment_number = 0, 
@@ -77,12 +77,12 @@ class TestGetCollection200Response(unittest.TestCase):
                             indexing_threshold = 0, 
                             flush_interval_sec = 0, 
                             max_optimization_threads = 0, ), 
-                        wal_config = openapi_client.models.wal_config.WalConfig(
+                        wal_config = qdrant_openapi.models.wal_config.WalConfig(
                             wal_capacity_mb = 1, 
                             wal_segments_ahead = 0, ), 
                         quantization_config = null, ), 
                     payload_schema = {
-                        'key' : openapi_client.models.payload_index_info.PayloadIndexInfo(
+                        'key' : qdrant_openapi.models.payload_index_info.PayloadIndexInfo(
                             data_type = 'keyword', 
                             points = 0, )
                         }, )

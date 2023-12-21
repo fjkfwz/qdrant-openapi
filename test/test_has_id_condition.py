@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.has_id_condition import HasIdCondition  # noqa: E501
+from qdrant_openapi.models.has_id_condition import HasIdCondition  # noqa: E501
 
 class TestHasIdCondition(unittest.TestCase):
     """HasIdCondition unit test stubs"""

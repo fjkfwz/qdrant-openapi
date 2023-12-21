@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.optimizer_telemetry import OptimizerTelemetry  # noqa: E501
+from qdrant_openapi.models.optimizer_telemetry import OptimizerTelemetry  # noqa: E501
 
 class TestOptimizerTelemetry(unittest.TestCase):
     """OptimizerTelemetry unit test stubs"""
@@ -38,7 +38,7 @@ class TestOptimizerTelemetry(unittest.TestCase):
         if include_optional:
             return OptimizerTelemetry(
                 status = None,
-                optimizations = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                optimizations = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
@@ -46,7 +46,7 @@ class TestOptimizerTelemetry(unittest.TestCase):
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
                 log = [
-                    openapi_client.models.tracker_telemetry.TrackerTelemetry(
+                    qdrant_openapi.models.tracker_telemetry.TrackerTelemetry(
                         name = '', 
                         segment_ids = [
                             0
@@ -59,7 +59,7 @@ class TestOptimizerTelemetry(unittest.TestCase):
         else:
             return OptimizerTelemetry(
                 status = None,
-                optimizations = openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                optimizations = qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                     count = 0, 
                     fail_count = 0, 
                     avg_duration_micros = 1.337, 
@@ -67,7 +67,7 @@ class TestOptimizerTelemetry(unittest.TestCase):
                     max_duration_micros = 1.337, 
                     last_responded = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
                 log = [
-                    openapi_client.models.tracker_telemetry.TrackerTelemetry(
+                    qdrant_openapi.models.tracker_telemetry.TrackerTelemetry(
                         name = '', 
                         segment_ids = [
                             0

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_snapshot200_response import CreateSnapshot200Response  # noqa: E501
+from qdrant_openapi.models.create_snapshot200_response import CreateSnapshot200Response  # noqa: E501
 
 class TestCreateSnapshot200Response(unittest.TestCase):
     """CreateSnapshot200Response unit test stubs"""
@@ -39,7 +39,7 @@ class TestCreateSnapshot200Response(unittest.TestCase):
             return CreateSnapshot200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.snapshot_description.SnapshotDescription(
+                result = qdrant_openapi.models.snapshot_description.SnapshotDescription(
                     name = '', 
                     creation_time = '', 
                     size = 0, )

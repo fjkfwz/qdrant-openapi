@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.message_send_errors import MessageSendErrors  # noqa: E501
+from qdrant_openapi.models.message_send_errors import MessageSendErrors  # noqa: E501
 
 class TestMessageSendErrors(unittest.TestCase):
     """MessageSendErrors unit test stubs"""

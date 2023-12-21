@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.batch_payloads_inner import BatchPayloadsInner  # noqa: E501
+from qdrant_openapi.models.batch_payloads_inner import BatchPayloadsInner  # noqa: E501
 
 class TestBatchPayloadsInner(unittest.TestCase):
     """BatchPayloadsInner unit test stubs"""

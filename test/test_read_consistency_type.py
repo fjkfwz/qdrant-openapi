@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.read_consistency_type import ReadConsistencyType  # noqa: E501
+from qdrant_openapi.models.read_consistency_type import ReadConsistencyType  # noqa: E501
 
 class TestReadConsistencyType(unittest.TestCase):
     """ReadConsistencyType unit test stubs"""

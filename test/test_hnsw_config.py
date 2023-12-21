@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.hnsw_config import HnswConfig  # noqa: E501
+from qdrant_openapi.models.hnsw_config import HnswConfig  # noqa: E501
 
 class TestHnswConfig(unittest.TestCase):
     """HnswConfig unit test stubs"""

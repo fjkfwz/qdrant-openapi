@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.collections_api import CollectionsApi  # noqa: E501
+from qdrant_openapi.api.collections_api import CollectionsApi  # noqa: E501
 
 
 class TestCollectionsApi(unittest.TestCase):

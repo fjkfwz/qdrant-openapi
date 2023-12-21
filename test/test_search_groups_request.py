@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.search_groups_request import SearchGroupsRequest  # noqa: E501
+from qdrant_openapi.models.search_groups_request import SearchGroupsRequest  # noqa: E501
 
 class TestSearchGroupsRequest(unittest.TestCase):
     """SearchGroupsRequest unit test stubs"""
@@ -39,7 +39,7 @@ class TestSearchGroupsRequest(unittest.TestCase):
             return SearchGroupsRequest(
                 shard_key = None,
                 vector = None,
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 
@@ -49,10 +49,10 @@ class TestSearchGroupsRequest(unittest.TestCase):
                     must_not = [
                         null
                         ], ),
-                params = openapi_client.models.search_params.SearchParams(
+                params = qdrant_openapi.models.search_params.SearchParams(
                     hnsw_ef = 0, 
                     exact = True, 
-                    quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                    quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                         ignore = True, 
                         rescore = True, 
                         oversampling = 1, ), 

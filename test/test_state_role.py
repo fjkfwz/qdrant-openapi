@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.state_role import StateRole  # noqa: E501
+from qdrant_openapi.models.state_role import StateRole  # noqa: E501
 
 class TestStateRole(unittest.TestCase):
     """StateRole unit test stubs"""

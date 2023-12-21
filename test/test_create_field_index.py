@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.create_field_index import CreateFieldIndex  # noqa: E501
+from qdrant_openapi.models.create_field_index import CreateFieldIndex  # noqa: E501
 
 class TestCreateFieldIndex(unittest.TestCase):
     """CreateFieldIndex unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.recover_from_uploaded_snapshot202_response import RecoverFromUploadedSnapshot202Response  # noqa: E501
+from qdrant_openapi.models.recover_from_uploaded_snapshot202_response import RecoverFromUploadedSnapshot202Response  # noqa: E501
 
 class TestRecoverFromUploadedSnapshot202Response(unittest.TestCase):
     """RecoverFromUploadedSnapshot202Response unit test stubs"""

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.point_vectors import PointVectors  # noqa: E501
+from qdrant_openapi.models.point_vectors import PointVectors  # noqa: E501
 
 class TestPointVectors(unittest.TestCase):
     """PointVectors unit test stubs"""

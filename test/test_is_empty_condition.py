@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.is_empty_condition import IsEmptyCondition  # noqa: E501
+from qdrant_openapi.models.is_empty_condition import IsEmptyCondition  # noqa: E501
 
 class TestIsEmptyCondition(unittest.TestCase):
     """IsEmptyCondition unit test stubs"""
@@ -37,12 +37,12 @@ class TestIsEmptyCondition(unittest.TestCase):
         model = IsEmptyCondition()  # noqa: E501
         if include_optional:
             return IsEmptyCondition(
-                is_empty = openapi_client.models.payload_field.PayloadField(
+                is_empty = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', )
             )
         else:
             return IsEmptyCondition(
-                is_empty = openapi_client.models.payload_field.PayloadField(
+                is_empty = qdrant_openapi.models.payload_field.PayloadField(
                     key = '', ),
         )
         """

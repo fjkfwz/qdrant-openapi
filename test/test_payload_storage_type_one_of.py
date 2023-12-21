@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.payload_storage_type_one_of import PayloadStorageTypeOneOf  # noqa: E501
+from qdrant_openapi.models.payload_storage_type_one_of import PayloadStorageTypeOneOf  # noqa: E501
 
 class TestPayloadStorageTypeOneOf(unittest.TestCase):
     """PayloadStorageTypeOneOf unit test stubs"""

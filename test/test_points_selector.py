@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.points_selector import PointsSelector  # noqa: E501
+from qdrant_openapi.models.points_selector import PointsSelector  # noqa: E501
 
 class TestPointsSelector(unittest.TestCase):
     """PointsSelector unit test stubs"""
@@ -41,7 +41,7 @@ class TestPointsSelector(unittest.TestCase):
                     null
                     ],
                 shard_key = None,
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 
@@ -57,7 +57,7 @@ class TestPointsSelector(unittest.TestCase):
                 points = [
                     null
                     ],
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

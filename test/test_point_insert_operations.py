@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.point_insert_operations import PointInsertOperations  # noqa: E501
+from qdrant_openapi.models.point_insert_operations import PointInsertOperations  # noqa: E501
 
 class TestPointInsertOperations(unittest.TestCase):
     """PointInsertOperations unit test stubs"""
@@ -37,7 +37,7 @@ class TestPointInsertOperations(unittest.TestCase):
         model = PointInsertOperations()  # noqa: E501
         if include_optional:
             return PointInsertOperations(
-                batch = openapi_client.models.batch.Batch(
+                batch = qdrant_openapi.models.batch.Batch(
                     ids = [
                         null
                         ], 
@@ -47,7 +47,7 @@ class TestPointInsertOperations(unittest.TestCase):
                         ], ),
                 shard_key = None,
                 points = [
-                    openapi_client.models.point_struct.PointStruct(
+                    qdrant_openapi.models.point_struct.PointStruct(
                         id = null, 
                         vector = null, 
                         payload = { }, )
@@ -55,7 +55,7 @@ class TestPointInsertOperations(unittest.TestCase):
             )
         else:
             return PointInsertOperations(
-                batch = openapi_client.models.batch.Batch(
+                batch = qdrant_openapi.models.batch.Batch(
                     ids = [
                         null
                         ], 
@@ -64,7 +64,7 @@ class TestPointInsertOperations(unittest.TestCase):
                         null
                         ], ),
                 points = [
-                    openapi_client.models.point_struct.PointStruct(
+                    qdrant_openapi.models.point_struct.PointStruct(
                         id = null, 
                         vector = null, 
                         payload = { }, )

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.delete_alias_operation import DeleteAliasOperation  # noqa: E501
+from qdrant_openapi.models.delete_alias_operation import DeleteAliasOperation  # noqa: E501
 
 class TestDeleteAliasOperation(unittest.TestCase):
     """DeleteAliasOperation unit test stubs"""
@@ -37,12 +37,12 @@ class TestDeleteAliasOperation(unittest.TestCase):
         model = DeleteAliasOperation()  # noqa: E501
         if include_optional:
             return DeleteAliasOperation(
-                delete_alias = openapi_client.models.delete_alias.DeleteAlias(
+                delete_alias = qdrant_openapi.models.delete_alias.DeleteAlias(
                     alias_name = '', )
             )
         else:
             return DeleteAliasOperation(
-                delete_alias = openapi_client.models.delete_alias.DeleteAlias(
+                delete_alias = qdrant_openapi.models.delete_alias.DeleteAlias(
                     alias_name = '', ),
         )
         """

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.cluster_telemetry import ClusterTelemetry  # noqa: E501
+from qdrant_openapi.models.cluster_telemetry import ClusterTelemetry  # noqa: E501
 
 class TestClusterTelemetry(unittest.TestCase):
     """ClusterTelemetry unit test stubs"""
@@ -38,7 +38,7 @@ class TestClusterTelemetry(unittest.TestCase):
         if include_optional:
             return ClusterTelemetry(
                 enabled = True,
-                status = openapi_client.models.cluster_status_telemetry.ClusterStatusTelemetry(
+                status = qdrant_openapi.models.cluster_status_telemetry.ClusterStatusTelemetry(
                     number_of_peers = 0, 
                     term = 0, 
                     commit = 0, 
@@ -47,11 +47,11 @@ class TestClusterTelemetry(unittest.TestCase):
                     is_voter = True, 
                     peer_id = 0, 
                     consensus_thread_status = null, ),
-                config = openapi_client.models.cluster_config_telemetry.ClusterConfigTelemetry(
+                config = qdrant_openapi.models.cluster_config_telemetry.ClusterConfigTelemetry(
                     grpc_timeout_ms = 0, 
-                    p2p = openapi_client.models.p2p_config_telemetry.P2pConfigTelemetry(
+                    p2p = qdrant_openapi.models.p2p_config_telemetry.P2pConfigTelemetry(
                         connection_pool_size = 0, ), 
-                    consensus = openapi_client.models.consensus_config_telemetry.ConsensusConfigTelemetry(
+                    consensus = qdrant_openapi.models.consensus_config_telemetry.ConsensusConfigTelemetry(
                         max_message_queue_size = 0, 
                         tick_period_ms = 0, 
                         bootstrap_timeout_sec = 0, ), )

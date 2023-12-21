@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.payload_index_info import PayloadIndexInfo  # noqa: E501
+from qdrant_openapi.models.payload_index_info import PayloadIndexInfo  # noqa: E501
 
 class TestPayloadIndexInfo(unittest.TestCase):
     """PayloadIndexInfo unit test stubs"""
@@ -38,7 +38,7 @@ class TestPayloadIndexInfo(unittest.TestCase):
         if include_optional:
             return PayloadIndexInfo(
                 data_type = 'keyword',
-                params = openapi_client.models.text_index_params.TextIndexParams(
+                params = qdrant_openapi.models.text_index_params.TextIndexParams(
                     type = 'text', 
                     tokenizer = 'prefix', 
                     min_token_len = 0, 

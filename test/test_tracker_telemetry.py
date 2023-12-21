@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.tracker_telemetry import TrackerTelemetry  # noqa: E501
+from qdrant_openapi.models.tracker_telemetry import TrackerTelemetry  # noqa: E501
 
 class TestTrackerTelemetry(unittest.TestCase):
     """TrackerTelemetry unit test stubs"""

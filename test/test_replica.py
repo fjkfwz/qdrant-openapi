@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.replica import Replica  # noqa: E501
+from qdrant_openapi.models.replica import Replica  # noqa: E501
 
 class TestReplica(unittest.TestCase):
     """Replica unit test stubs"""

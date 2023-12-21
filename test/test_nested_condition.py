@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.nested_condition import NestedCondition  # noqa: E501
+from qdrant_openapi.models.nested_condition import NestedCondition  # noqa: E501
 
 class TestNestedCondition(unittest.TestCase):
     """NestedCondition unit test stubs"""
@@ -37,9 +37,9 @@ class TestNestedCondition(unittest.TestCase):
         model = NestedCondition()  # noqa: E501
         if include_optional:
             return NestedCondition(
-                nested = openapi_client.models.nested.Nested(
+                nested = qdrant_openapi.models.nested.Nested(
                     key = '', 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 
@@ -52,9 +52,9 @@ class TestNestedCondition(unittest.TestCase):
             )
         else:
             return NestedCondition(
-                nested = openapi_client.models.nested.Nested(
+                nested = qdrant_openapi.models.nested.Nested(
                     key = '', 
-                    filter = openapi_client.models.filter.Filter(
+                    filter = qdrant_openapi.models.filter.Filter(
                         should = [
                             null
                             ], 

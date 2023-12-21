@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.web_api_telemetry import WebApiTelemetry  # noqa: E501
+from qdrant_openapi.models.web_api_telemetry import WebApiTelemetry  # noqa: E501
 
 class TestWebApiTelemetry(unittest.TestCase):
     """WebApiTelemetry unit test stubs"""
@@ -39,7 +39,7 @@ class TestWebApiTelemetry(unittest.TestCase):
             return WebApiTelemetry(
                 responses = {
                     'key' : {
-                        'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 
@@ -53,7 +53,7 @@ class TestWebApiTelemetry(unittest.TestCase):
             return WebApiTelemetry(
                 responses = {
                     'key' : {
-                        'key' : openapi_client.models.operation_duration_statistics.OperationDurationStatistics(
+                        'key' : qdrant_openapi.models.operation_duration_statistics.OperationDurationStatistics(
                             count = 0, 
                             fail_count = 0, 
                             avg_duration_micros = 1.337, 

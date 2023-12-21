@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.alias_operations import AliasOperations  # noqa: E501
+from qdrant_openapi.models.alias_operations import AliasOperations  # noqa: E501
 
 class TestAliasOperations(unittest.TestCase):
     """AliasOperations unit test stubs"""
@@ -37,23 +37,23 @@ class TestAliasOperations(unittest.TestCase):
         model = AliasOperations()  # noqa: E501
         if include_optional:
             return AliasOperations(
-                create_alias = openapi_client.models.create_alias.CreateAlias(
+                create_alias = qdrant_openapi.models.create_alias.CreateAlias(
                     collection_name = '', 
                     alias_name = '', ),
-                delete_alias = openapi_client.models.delete_alias.DeleteAlias(
+                delete_alias = qdrant_openapi.models.delete_alias.DeleteAlias(
                     alias_name = '', ),
-                rename_alias = openapi_client.models.rename_alias.RenameAlias(
+                rename_alias = qdrant_openapi.models.rename_alias.RenameAlias(
                     old_alias_name = '', 
                     new_alias_name = '', )
             )
         else:
             return AliasOperations(
-                create_alias = openapi_client.models.create_alias.CreateAlias(
+                create_alias = qdrant_openapi.models.create_alias.CreateAlias(
                     collection_name = '', 
                     alias_name = '', ),
-                delete_alias = openapi_client.models.delete_alias.DeleteAlias(
+                delete_alias = qdrant_openapi.models.delete_alias.DeleteAlias(
                     alias_name = '', ),
-                rename_alias = openapi_client.models.rename_alias.RenameAlias(
+                rename_alias = qdrant_openapi.models.rename_alias.RenameAlias(
                     old_alias_name = '', 
                     new_alias_name = '', ),
         )

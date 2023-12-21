@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.indexes_one_of import IndexesOneOf  # noqa: E501
+from qdrant_openapi.models.indexes_one_of import IndexesOneOf  # noqa: E501
 
 class TestIndexesOneOf(unittest.TestCase):
     """IndexesOneOf unit test stubs"""
@@ -38,12 +38,12 @@ class TestIndexesOneOf(unittest.TestCase):
         if include_optional:
             return IndexesOneOf(
                 type = 'plain',
-                options = openapi_client.models.options.options()
+                options = qdrant_openapi.models.options.options()
             )
         else:
             return IndexesOneOf(
                 type = 'plain',
-                options = openapi_client.models.options.options(),
+                options = qdrant_openapi.models.options.options(),
         )
         """
 

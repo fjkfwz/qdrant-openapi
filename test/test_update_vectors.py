@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.update_vectors import UpdateVectors  # noqa: E501
+from qdrant_openapi.models.update_vectors import UpdateVectors  # noqa: E501
 
 class TestUpdateVectors(unittest.TestCase):
     """UpdateVectors unit test stubs"""
@@ -38,7 +38,7 @@ class TestUpdateVectors(unittest.TestCase):
         if include_optional:
             return UpdateVectors(
                 points = [
-                    openapi_client.models.point_vectors.PointVectors(
+                    qdrant_openapi.models.point_vectors.PointVectors(
                         id = null, 
                         vector = null, )
                     ],
@@ -47,7 +47,7 @@ class TestUpdateVectors(unittest.TestCase):
         else:
             return UpdateVectors(
                 points = [
-                    openapi_client.models.point_vectors.PointVectors(
+                    qdrant_openapi.models.point_vectors.PointVectors(
                         id = null, 
                         vector = null, )
                     ],

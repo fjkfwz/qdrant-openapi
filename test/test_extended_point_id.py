@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.extended_point_id import ExtendedPointId  # noqa: E501
+from qdrant_openapi.models.extended_point_id import ExtendedPointId  # noqa: E501
 
 class TestExtendedPointId(unittest.TestCase):
     """ExtendedPointId unit test stubs"""

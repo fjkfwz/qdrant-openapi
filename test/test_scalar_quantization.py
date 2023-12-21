@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scalar_quantization import ScalarQuantization  # noqa: E501
+from qdrant_openapi.models.scalar_quantization import ScalarQuantization  # noqa: E501
 
 class TestScalarQuantization(unittest.TestCase):
     """ScalarQuantization unit test stubs"""
@@ -37,14 +37,14 @@ class TestScalarQuantization(unittest.TestCase):
         model = ScalarQuantization()  # noqa: E501
         if include_optional:
             return ScalarQuantization(
-                scalar = openapi_client.models.scalar_quantization_config.ScalarQuantizationConfig(
+                scalar = qdrant_openapi.models.scalar_quantization_config.ScalarQuantizationConfig(
                     type = 'int8', 
                     quantile = 0.5, 
                     always_ram = True, )
             )
         else:
             return ScalarQuantization(
-                scalar = openapi_client.models.scalar_quantization_config.ScalarQuantizationConfig(
+                scalar = qdrant_openapi.models.scalar_quantization_config.ScalarQuantizationConfig(
                     type = 'int8', 
                     quantile = 0.5, 
                     always_ram = True, ),

@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.cluster_operations import ClusterOperations  # noqa: E501
+from qdrant_openapi.models.cluster_operations import ClusterOperations  # noqa: E501
 
 class TestClusterOperations(unittest.TestCase):
     """ClusterOperations unit test stubs"""
@@ -37,62 +37,62 @@ class TestClusterOperations(unittest.TestCase):
         model = ClusterOperations()  # noqa: E501
         if include_optional:
             return ClusterOperations(
-                move_shard = openapi_client.models.move_shard.MoveShard(
+                move_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
                     method = null, ),
-                replicate_shard = openapi_client.models.move_shard.MoveShard(
+                replicate_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
                     method = null, ),
-                abort_transfer = openapi_client.models.move_shard.MoveShard(
+                abort_transfer = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
                     method = null, ),
-                drop_replica = openapi_client.models.replica.Replica(
+                drop_replica = qdrant_openapi.models.replica.Replica(
                     shard_id = 0, 
                     peer_id = 0, ),
-                create_sharding_key = openapi_client.models.create_sharding_key.CreateShardingKey(
+                create_sharding_key = qdrant_openapi.models.create_sharding_key.CreateShardingKey(
                     shard_key = null, 
                     shards_number = 1, 
                     replication_factor = 1, 
                     placement = [
                         0
                         ], ),
-                drop_sharding_key = openapi_client.models.drop_sharding_key.DropShardingKey(
+                drop_sharding_key = qdrant_openapi.models.drop_sharding_key.DropShardingKey(
                     shard_key = null, )
             )
         else:
             return ClusterOperations(
-                move_shard = openapi_client.models.move_shard.MoveShard(
+                move_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
                     method = null, ),
-                replicate_shard = openapi_client.models.move_shard.MoveShard(
+                replicate_shard = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
                     method = null, ),
-                abort_transfer = openapi_client.models.move_shard.MoveShard(
+                abort_transfer = qdrant_openapi.models.move_shard.MoveShard(
                     shard_id = 0, 
                     to_peer_id = 0, 
                     from_peer_id = 0, 
                     method = null, ),
-                drop_replica = openapi_client.models.replica.Replica(
+                drop_replica = qdrant_openapi.models.replica.Replica(
                     shard_id = 0, 
                     peer_id = 0, ),
-                create_sharding_key = openapi_client.models.create_sharding_key.CreateShardingKey(
+                create_sharding_key = qdrant_openapi.models.create_sharding_key.CreateShardingKey(
                     shard_key = null, 
                     shards_number = 1, 
                     replication_factor = 1, 
                     placement = [
                         0
                         ], ),
-                drop_sharding_key = openapi_client.models.drop_sharding_key.DropShardingKey(
+                drop_sharding_key = qdrant_openapi.models.drop_sharding_key.DropShardingKey(
                     shard_key = null, ),
         )
         """

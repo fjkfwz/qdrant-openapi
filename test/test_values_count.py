@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.values_count import ValuesCount  # noqa: E501
+from qdrant_openapi.models.values_count import ValuesCount  # noqa: E501
 
 class TestValuesCount(unittest.TestCase):
     """ValuesCount unit test stubs"""

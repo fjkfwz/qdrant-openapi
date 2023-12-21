@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.optimizers_status_one_of import OptimizersStatusOneOf  # noqa: E501
+from qdrant_openapi.models.optimizers_status_one_of import OptimizersStatusOneOf  # noqa: E501
 
 class TestOptimizersStatusOneOf(unittest.TestCase):
     """OptimizersStatusOneOf unit test stubs"""

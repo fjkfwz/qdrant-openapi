@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.discover_request_batch import DiscoverRequestBatch  # noqa: E501
+from qdrant_openapi.models.discover_request_batch import DiscoverRequestBatch  # noqa: E501
 
 class TestDiscoverRequestBatch(unittest.TestCase):
     """DiscoverRequestBatch unit test stubs"""
@@ -38,15 +38,15 @@ class TestDiscoverRequestBatch(unittest.TestCase):
         if include_optional:
             return DiscoverRequestBatch(
                 searches = [
-                    openapi_client.models.discover_request.DiscoverRequest(
+                    qdrant_openapi.models.discover_request.DiscoverRequest(
                         shard_key = null, 
                         target = null, 
                         context = [
-                            openapi_client.models.context_example_pair.ContextExamplePair(
+                            qdrant_openapi.models.context_example_pair.ContextExamplePair(
                                 positive = null, 
                                 negative = null, )
                             ], 
-                        filter = openapi_client.models.filter.Filter(
+                        filter = qdrant_openapi.models.filter.Filter(
                             should = [
                                 null
                                 ], 
@@ -56,10 +56,10 @@ class TestDiscoverRequestBatch(unittest.TestCase):
                             must_not = [
                                 null
                                 ], ), 
-                        params = openapi_client.models.search_params.SearchParams(
+                        params = qdrant_openapi.models.search_params.SearchParams(
                             hnsw_ef = 0, 
                             exact = True, 
-                            quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                            quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                                 ignore = True, 
                                 rescore = True, 
                                 oversampling = 1, ), 
@@ -69,7 +69,7 @@ class TestDiscoverRequestBatch(unittest.TestCase):
                         with_payload = null, 
                         with_vector = null, 
                         using = '', 
-                        lookup_from = openapi_client.models.lookup_location.LookupLocation(
+                        lookup_from = qdrant_openapi.models.lookup_location.LookupLocation(
                             collection = '', 
                             vector = '', ), )
                     ]
@@ -77,15 +77,15 @@ class TestDiscoverRequestBatch(unittest.TestCase):
         else:
             return DiscoverRequestBatch(
                 searches = [
-                    openapi_client.models.discover_request.DiscoverRequest(
+                    qdrant_openapi.models.discover_request.DiscoverRequest(
                         shard_key = null, 
                         target = null, 
                         context = [
-                            openapi_client.models.context_example_pair.ContextExamplePair(
+                            qdrant_openapi.models.context_example_pair.ContextExamplePair(
                                 positive = null, 
                                 negative = null, )
                             ], 
-                        filter = openapi_client.models.filter.Filter(
+                        filter = qdrant_openapi.models.filter.Filter(
                             should = [
                                 null
                                 ], 
@@ -95,10 +95,10 @@ class TestDiscoverRequestBatch(unittest.TestCase):
                             must_not = [
                                 null
                                 ], ), 
-                        params = openapi_client.models.search_params.SearchParams(
+                        params = qdrant_openapi.models.search_params.SearchParams(
                             hnsw_ef = 0, 
                             exact = True, 
-                            quantization = openapi_client.models.quantization_search_params.QuantizationSearchParams(
+                            quantization = qdrant_openapi.models.quantization_search_params.QuantizationSearchParams(
                                 ignore = True, 
                                 rescore = True, 
                                 oversampling = 1, ), 
@@ -108,7 +108,7 @@ class TestDiscoverRequestBatch(unittest.TestCase):
                         with_payload = null, 
                         with_vector = null, 
                         using = '', 
-                        lookup_from = openapi_client.models.lookup_location.LookupLocation(
+                        lookup_from = qdrant_openapi.models.lookup_location.LookupLocation(
                             collection = '', 
                             vector = '', ), )
                     ],

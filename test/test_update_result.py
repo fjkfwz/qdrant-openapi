@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.update_result import UpdateResult  # noqa: E501
+from qdrant_openapi.models.update_result import UpdateResult  # noqa: E501
 
 class TestUpdateResult(unittest.TestCase):
     """UpdateResult unit test stubs"""

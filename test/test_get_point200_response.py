@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_point200_response import GetPoint200Response  # noqa: E501
+from qdrant_openapi.models.get_point200_response import GetPoint200Response  # noqa: E501
 
 class TestGetPoint200Response(unittest.TestCase):
     """GetPoint200Response unit test stubs"""
@@ -39,7 +39,7 @@ class TestGetPoint200Response(unittest.TestCase):
             return GetPoint200Response(
                 time = 1.337,
                 status = '',
-                result = openapi_client.models.record.Record(
+                result = qdrant_openapi.models.record.Record(
                     id = null, 
                     payload = { }, 
                     vector = null, 

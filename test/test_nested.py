@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.nested import Nested  # noqa: E501
+from qdrant_openapi.models.nested import Nested  # noqa: E501
 
 class TestNested(unittest.TestCase):
     """Nested unit test stubs"""
@@ -38,7 +38,7 @@ class TestNested(unittest.TestCase):
         if include_optional:
             return Nested(
                 key = '',
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 
@@ -52,7 +52,7 @@ class TestNested(unittest.TestCase):
         else:
             return Nested(
                 key = '',
-                filter = openapi_client.models.filter.Filter(
+                filter = qdrant_openapi.models.filter.Filter(
                     should = [
                         null
                         ], 

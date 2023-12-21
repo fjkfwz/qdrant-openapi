@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.clear_payload_operation import ClearPayloadOperation  # noqa: E501
+from qdrant_openapi.models.clear_payload_operation import ClearPayloadOperation  # noqa: E501
 
 class TestClearPayloadOperation(unittest.TestCase):
     """ClearPayloadOperation unit test stubs"""

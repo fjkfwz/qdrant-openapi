@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.wal_config_diff import WalConfigDiff  # noqa: E501
+from qdrant_openapi.models.wal_config_diff import WalConfigDiff  # noqa: E501
 
 class TestWalConfigDiff(unittest.TestCase):
     """WalConfigDiff unit test stubs"""

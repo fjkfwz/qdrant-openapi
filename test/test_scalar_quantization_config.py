@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.scalar_quantization_config import ScalarQuantizationConfig  # noqa: E501
+from qdrant_openapi.models.scalar_quantization_config import ScalarQuantizationConfig  # noqa: E501
 
 class TestScalarQuantizationConfig(unittest.TestCase):
     """ScalarQuantizationConfig unit test stubs"""

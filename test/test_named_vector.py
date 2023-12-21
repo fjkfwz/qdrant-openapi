@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.named_vector import NamedVector  # noqa: E501
+from qdrant_openapi.models.named_vector import NamedVector  # noqa: E501
 
 class TestNamedVector(unittest.TestCase):
     """NamedVector unit test stubs"""

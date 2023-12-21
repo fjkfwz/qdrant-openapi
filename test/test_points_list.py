@@ -16,7 +16,7 @@
 import unittest
 import datetime
 
-from openapi_client.models.points_list import PointsList  # noqa: E501
+from qdrant_openapi.models.points_list import PointsList  # noqa: E501
 
 class TestPointsList(unittest.TestCase):
     """PointsList unit test stubs"""
@@ -38,7 +38,7 @@ class TestPointsList(unittest.TestCase):
         if include_optional:
             return PointsList(
                 points = [
-                    openapi_client.models.point_struct.PointStruct(
+                    qdrant_openapi.models.point_struct.PointStruct(
                         id = null, 
                         vector = null, 
                         payload = { }, )
@@ -48,7 +48,7 @@ class TestPointsList(unittest.TestCase):
         else:
             return PointsList(
                 points = [
-                    openapi_client.models.point_struct.PointStruct(
+                    qdrant_openapi.models.point_struct.PointStruct(
                         id = null, 
                         vector = null, 
                         payload = { }, )
